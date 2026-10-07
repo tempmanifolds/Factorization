@@ -1,0 +1,406 @@
+\section{因式分解的方法拓展}
+
+\noindent\whisper{未特别说明时，本章在有理系数范围内分解因式。}\par
+
+\Needspace{18\baselineskip}
+
+\subsection{分组与拆项：让共同因式出现}
+
+\topicline{前两题从已学的提公因式法出发，后两题分别接上公式法与有目标的拆项。}
+
+\Needspace{12\baselineskip}
+
+\begin{problem}{例题 1 （分组后再提一次）}
+
+分解因式：$x^2-xy+4x-4y$。
+
+\end{problem}
+
+\Needspace{6\baselineskip}
+
+\begin{solution}{例题 1 · 讲解}
+
+\think 前两项都含 $x$，后两项都含 $4$；两组里 $x$ 与 $y$ 的系数比例相同，因此分组后有机会出现同一个括号。
+
+\solve \[x^2-xy+4x-4y=x(x-y)+4(x-y)=(x-y)(x+4).\]
+
+\insight{分组的依据是各组能产生共同因式；分组本身只是中间步骤。}
+
+\end{solution}
+
+\Needspace{12\baselineskip}
+
+\begin{problem}{例题 2 （一组先配成平方）}
+
+分解因式：$x^2-4y^2-z^2+4yz$。
+
+\end{problem}
+
+\Needspace{6\baselineskip}
+
+\begin{solution}{例题 2 · 讲解}
+
+\think $4y^2$ 与 $z^2$ 是平方，$4yz$ 是 $2\cdot2y\cdot z$。把这三项连同符号整理，可使原式成为两个平方的差。
+
+\solve \begin{align*}
+x^2-4y^2-z^2+4yz&=x^2-(4y^2-4yz+z^2)\\
+&=x^2-(2y-z)^2\\
+&=(x-2y+z)(x+2y-z).
+\end{align*}
+
+\insight{括号前有负号时，先检查括号内每一项的符号，再识别完全平方。}
+
+\end{solution}
+
+\Needspace{12\baselineskip}
+
+\begin{problem}{例题 3 （拆项的目标是什么）}
+
+分解因式：$x^3+6x^2+11x+6$。尝试给出两种拆项方式。
+
+\end{problem}
+
+\Needspace{6\baselineskip}
+
+\begin{solution}{例题 3 · 讲解}
+
+\think 如果想提出 $x+1$，三次项应与 $x^2$ 配成一组，常数 $6$ 应与 $6x$ 配成一组；余下 $5x^2+5x$ 正好也含 $x+1$。第二种拆法同样围绕目标因式安排系数。
+
+\solve 第一种拆法：
+\begin{align*}
+x^3+6x^2+11x+6&=(x^3+x^2)+(5x^2+5x)+(6x+6)\\
+&=(x+1)(x^2+5x+6)\\
+&=(x+1)(x+2)(x+3).
+\end{align*}
+第二种拆法：
+\begin{align*}
+x^3+6x^2+11x+6&=(x^3+2x^2)+(4x^2+8x)+(3x+6)\\
+&=(x+2)(x^2+4x+3)\\
+&=(x+1)(x+2)(x+3).
+\end{align*}
+
+\insight{先确定希望出现的括号，再拆项；拆出的各项相加必须恢复原式。}
+
+\end{solution}
+
+\methodcard{先观察各项共有的字母或系数比例，再尝试分组。每组可以先提公因式，也可以先用公式；关键是各组处理后，整个式子还能分解。拆项时，围绕希望出现的因式安排系数。}{提出负号时，括号内各项都要变号；拆项前后逐项核对，防止少项或多项。}
+
+\begin{problem}{练习 1 （分组以后仍要检查）}
+
+分解因式：$a^3+a^2-a-1$。
+
+\end{problem}
+
+\Needspace{18\baselineskip}
+
+\subsection{配方与添项：把结构改成平方差}
+
+\topicline{由现成的完全平方，过渡到给两组配方，再学习添减同一项。}
+
+\Needspace{12\baselineskip}
+
+\begin{problem}{例题 4 （把一次项藏进平方）}
+
+分解因式：$x^2-y^2-4x+4$。
+
+\end{problem}
+
+\Needspace{6\baselineskip}
+
+\begin{solution}{例题 4 · 讲解}
+
+\think $x^2-4x+4$ 恰好是完全平方，剩下的是 $-y^2$，因此先配方再用平方差。
+
+\solve \[x^2-y^2-4x+4=(x-2)^2-y^2=(x-2-y)(x-2+y).\]
+
+\insight{不要只盯着原式的项数；重新组合后可能直接显出公式。}
+
+\end{solution}
+
+\Needspace{12\baselineskip}
+
+\begin{problem}{例题 5 （从四次式找平方差）}
+
+分解因式：$x^4-7x^2+1$。
+
+\end{problem}
+
+\Needspace{6\baselineskip}
+
+\begin{solution}{例题 5 · 讲解}
+
+\think 首尾为 $x^4$ 与 $1$，可以先考虑 $(x^2+1)^2$。它的中间项是 $2x^2$，比原式多 $9x^2$，多出的部分也是平方。
+
+\solve \begin{align*}
+x^4-7x^2+1&=x^4+2x^2+1-9x^2\\
+&=(x^2+1)^2-(3x)^2\\
+&=(x^2-3x+1)(x^2+3x+1).
+\end{align*}
+
+\insight{添项与减项要成对出现；先计算补出的中间项与原中间项相差多少。}
+
+\end{solution}
+
+\methodcard{先找平方项，再用 $2AB$ 判断缺少的中间项。已经存在完全平方就先重组；需要添项时，同时减去同一项，使原式恒等不变。}{$A^2+B^2$ 不能直接套平方差；补出的中间项必须按 $2AB$ 计算。}
+
+\begin{problem}{练习 2 （常数拆给两个平方）}
+
+分解因式：$4x^2-4x-y^2+4y-3$。
+
+\end{problem}
+
+\begin{problem}{练习 3 （平方和也可能继续分解）}
+
+在有理系数范围内分解因式：$a^4+4$。
+
+\hint{若先写出 $(a^2+2)^2$，需要减去什么才能恢复原式？}
+
+\end{problem}
+
+\Needspace{18\baselineskip}
+
+\subsection{整体与换元：减少结构的复杂程度}
+
+\topicline{从直接重复的块开始，逐步学习先配对制造整体，最后检查代回后的各因式。}
+
+\Needspace{12\baselineskip}
+
+\begin{problem}{例题 6 （反复出现的块）}
+
+分解因式：$(x^2+5x+2)(x^2+5x+3)-12$。
+
+\end{problem}
+
+\Needspace{6\baselineskip}
+
+\begin{solution}{例题 6 · 讲解}
+
+\think 两个括号都含 $x^2+5x$，将它记为 $u$，只需处理关于 $u$ 的二次三项式。代回后还要检查各因式。
+
+\solve 令 $u=x^2+5x$，则
+\[(u+2)(u+3)-12=u^2+5u-6=(u+6)(u-1).\]
+代回得
+\begin{align*}
+\text{原式}&=(x^2+5x+6)(x^2+5x-1)\\
+&=(x+2)(x+3)(x^2+5x-1).
+\end{align*}
+$x^2+5x-1$ 不能分解为有理系数的一次因式，本题保留该二次因式。
+
+\insight{整体出现两次就可能值得换元；是否换元取决于结构能否简化。}
+
+\end{solution}
+
+\Needspace{12\baselineskip}
+
+\begin{problem}{例题 7 （换元之后还有一层）}
+
+分解因式：$(x^4+x^2-4)(x^4+x^2+3)+10$。
+
+\end{problem}
+
+\Needspace{6\baselineskip}
+
+\begin{solution}{例题 7 · 讲解}
+
+\think 换元能先降低结构的复杂程度。代回后，一个因式有平方差，另一个因式可以添减 $x^2$，因此不能停在两个高次因式的乘积。
+
+\solve 令 $u=x^4+x^2$，则
+\[(u-4)(u+3)+10=u^2-u-2=(u-2)(u+1).\]
+其中
+\begin{align*}
+x^4+x^2-2&=(x^2-1)(x^2+2)=(x-1)(x+1)(x^2+2),\\
+x^4+x^2+1&=(x^2+1)^2-x^2=(x^2-x+1)(x^2+x+1).
+\end{align*}
+故原式为
+\[(x-1)(x+1)(x^2+2)(x^2-x+1)(x^2+x+1).\]
+
+\insight{高次因式要继续看结构；“看起来像平方和”不等于不能分解。}
+
+\end{solution}
+
+\methodcard{圈出相同部分；必要时先重组使它出现；用新字母简化；用已学方法分解；换回原字母并继续检查。整体出现的次数没有固定门槛。}{换元后必须代回；得到完全平方或高次因式后仍须检查分解是否彻底。}
+
+\begin{problem}{练习 4 （先配对，再找整体）}
+
+分解因式：$(x+1)(x+2)(x+3)(x+6)+x^2$。
+
+\hint{比较不同配对方式相乘后的一次项和常数项。}
+
+\end{problem}
+
+\begin{problem}{练习 5 （两个整体合成一个）}
+
+分解因式：$(x+y)(x+y+2xy)+(xy+1)(xy-1)$。
+
+\end{problem}
+
+\begin{problem}{练习 6 （完全平方以后继续分解）}
+
+分解因式：$(x+y-2xy)(x+y-2)+(xy-1)^2$。
+
+\end{problem}
+
+\Needspace{18\baselineskip}
+
+\subsection{主元整理：选一个字母建立秩序}
+
+\topicline{先整理二元二次式，再换主元暴露公因式，最后处理循环结构。}
+
+\Needspace{12\baselineskip}
+
+\begin{problem}{例题 8 （把另一个字母当系数）}
+
+分解因式：$x^2+xy-6y^2+x+13y-6$。
+
+\end{problem}
+
+\Needspace{6\baselineskip}
+
+\begin{solution}{例题 8 · 讲解}
+
+\think 把 $y$ 暂时视作常数，原式是关于 $x$ 的二次三项式。常数部分 $-6y^2+13y-6$ 可以先分解，再检查两个括号的一次项和。
+
+\solve \begin{align*}
+\text{原式}&=x^2+(y+1)x-(3y-2)(2y-3)\\
+&=[x+(3y-2)][x-(2y-3)]\\
+&=(x+3y-2)(x-2y+3).
+\end{align*}
+两个括号中常数部分相加为 $(3y-2)+(-2y+3)=y+1$，与 $x$ 的系数一致。
+
+\insight{选一个字母整理成熟悉的二次式，其他字母就成为系数。}
+
+\end{solution}
+
+\Needspace{12\baselineskip}
+
+\begin{problem}{例题 9 （循环式里寻找相同括号）}
+
+分解因式：$a^2(b-c)+b^2(c-a)+c^2(a-b)$。
+
+\end{problem}
+
+\Needspace{6\baselineskip}
+
+\begin{solution}{例题 9 · 讲解}
+
+\think 把 $a$ 当主元后，二次项系数为 $b-c$，一次项系数为 $c^2-b^2$，常数项为 $b^2c-bc^2$。后三者都可以提取 $b-c$。
+
+\solve \begin{align*}
+\text{原式}&=(b-c)a^2+(c^2-b^2)a+bc(b-c)\\
+&=(b-c)[a^2-(b+c)a+bc]\\
+&=(b-c)(a-b)(a-c).
+\end{align*}
+进一步，若原式等于零，则 $(b-c)(a-b)(a-c)=0$，至少一个差为零，因此 $a,b,c$ 中至少有两个相等。
+
+\insight{循环排列的式子可以先打破排列，按一个字母整理出共同结构。}
+
+\end{solution}
+
+\methodcard{选一个字母，按它的降幂收集各项，把其余字母暂作系数。可以先试次数较低、系数较易分解的字母；若整理没有帮助，再换一个角度。}{收集同次项时保留所有系数与符号；主元的选择是观察线索，不是固定结论。}
+
+\begin{problem}{练习 7 （换一个主元看公因式）}
+
+分解因式：$x^3+(2a+1)x^2+(a^2+2a-1)x+(a^2-1)$。
+
+\hint{比较 $x$ 与 $a$ 的最高次数；尝试按 $a$ 的降幂整理。}
+
+\end{problem}
+
+\Needspace{18\baselineskip}
+
+\subsection{比较系数：由目标因式倒推}
+
+\topicline{从确定常数项，到多元参数，再到已知二次因式；试代值仅作为拆项线索。}
+
+\Needspace{12\baselineskip}
+
+\begin{problem}{例题 10 （用常数项确定第三个因式）}
+
+已知 $x^3+ax^2+bx+8$ 有两个因式 $x+1$ 和 $x+2$，求 $a+b$。
+
+\end{problem}
+
+\Needspace{6\baselineskip}
+
+\begin{solution}{例题 10 · 讲解}
+
+\think 原式首项系数为 $1$，已经知道两个不同的一次因式，第三个因式应写成 $x+c$。先比较常数项，能直接确定 $c$。
+
+\solve 设
+\[x^3+ax^2+bx+8=(x+1)(x+2)(x+c).\]
+比较常数项，$2c=8$，得 $c=4$。于是
+\[(x+1)(x+2)(x+4)=x^3+7x^2+14x+8,\]
+所以 $a=7$，$b=14$，$a+b=21$。
+
+\insight{比较系数时，先选最容易确定的常数项或最高次项。}
+
+\end{solution}
+
+\Needspace{12\baselineskip}
+
+\begin{problem}{例题 11 （由一次项倒推参数）}
+
+$k$ 为何值时，多项式 $x^2-2xy+ky^2+3x-5y+2$ 能分解为两个实系数的一次因式的积？
+
+\end{problem}
+
+\Needspace{6\baselineskip}
+
+\begin{solution}{例题 11 · 讲解}
+
+\think 令 $y=0$ 得 $(x+1)(x+2)$。因此两个一次因式经调整常数倍后，可分别设成 $x+my+1$ 与 $x+ny+2$。比较 $xy$ 和 $y$ 的系数，先确定 $m,n$。
+
+\solve 设原式为 $(x+my+1)(x+ny+2)$，展开并比较系数得
+\[m+n=-2,\qquad 2m+n=-5,\qquad mn=k.\]
+前两式相减得 $m=-3$，继而 $n=1$，所以 $k=-3$。
+此时原式确为 $(x-3y+1)(x+y+2)$，满足要求。
+
+\insight{先利用已知的简单部分确定因式形状，再用系数条件求参数。}
+
+\end{solution}
+
+\methodcard{根据次数与首项系数设出待求因式；展开；比较同次项系数；从最简单的等式开始求参数；最后检查所得积确为原式。}{题中“有公因式”应指非恒定公因式；本节不用长除法、二次公式或判别式。}
+
+\begin{problem}{练习 8 （用拆项落实候选因式）}
+
+分解因式：$x^3-2x^2-13x-10$。
+
+\hint{代入 $x=-1$ 后式子为零；尝试通过拆项让每组都出现 $x+1$。}
+
+\end{problem}
+
+\begin{problem}{练习 9 （已知二次因式，比较四次式系数）}
+
+已知 $x^2+x-6$ 是多项式 $2x^4+x^3-ax^2+bx+a+b-1$ 的因式，求 $a,b$。
+
+\hint{把另一个因式设为二次式；先比较最高次项。}
+
+\end{problem}
+
+\Needspace{12\baselineskip}
+
+\subsection{巩固与选学}
+
+\topicline{前两题检查是否会独立识别结构；最后一题选学，不作为基本达标要求。}
+
+\begin{problem}{练习 10 （巩固：识别一个平方）}
+
+分解因式：$x^4+2x^3+3x^2+2x+1$。
+
+\end{problem}
+
+\methodcard{先说清观察依据，再写变形。遇到难题时，先寻找式子各部分的联系，随后决定使用分组、配方或整体思想。}{本章默认在有理系数范围内分解；不要求为拆二次式引入根式系数。}
+
+\begin{problem}{练习 11 （巩固：分组方式需要改变）}
+
+在实数范围内分解因式：$x^2y^2-x^2y-xy^2+x+y-1$。
+
+\end{problem}
+
+\begin{problem}{挑战 1 \starred （选学：三个整体之间的联系）}
+
+分解因式：$(2x-3y)^3+(3x-2y)^3-125(x-y)^3$。本题可使用立方和公式。
+
+\hint{比较前两个立方底数的和与第三个立方底数。}
+
+\end{problem}

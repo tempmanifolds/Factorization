@@ -1,0 +1,18 @@
+# Only the final merged handout and its editable sources are tracked.
+/*
+!/.gitignore
+!/README.md
+!/因式分解-讲义.pdf
+!/因式分解-内容稿.md
+!/factorization-handout/
+
+/factorization-handout/*
+!/factorization-handout/README.md
+!/factorization-handout/main.tex
+!/factorization-handout/loom.cls
+!/factorization-handout/sections/
+
+/factorization-handout/sections/*
+!/factorization-handout/sections/01-chapter.tex
+!/factorization-handout/sections/02-chapter.tex
+!/factorization-handout/sections/90-solutions.tex

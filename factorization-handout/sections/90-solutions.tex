@@ -1,0 +1,484 @@
+\section*{练习与挑战解析}
+
+\addcontentsline{toc}{section}{练习与挑战解析}
+
+\Needspace{12\baselineskip}
+
+\subsection*{第1章 因式分解的方法拓展}
+
+\Needspace{8\baselineskip}
+
+\block{分组与拆项：让共同因式出现}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 1 · 解析}
+
+\think 前两项提出 $a^2$ 后出现 $a+1$；后两项提出负号也出现 $a+1$。提完共同括号后，剩下的式子还可以用平方差公式。
+
+\solve \[a^3+a^2-a-1=a^2(a+1)-(a+1)=(a+1)(a^2-1)=(a+1)^2(a-1).\]
+
+\insight{提取负号要逐项变号；每得到一个因式，都再检查能否继续分解。}
+
+\end{solution}
+
+\Needspace{8\baselineskip}
+
+\block{配方与添项：把结构改成平方差}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 2 · 解析}
+
+\think 第一组配成 $(2x-1)^2$ 需要常数 $1$；第二组配成 $(y-2)^2$ 需要常数 $4$。两组相减所产生的常数正好为 $1-4=-3$。
+
+\solve \begin{align*}
+4x^2-4x-y^2+4y-3&=(4x^2-4x+1)-(y^2-4y+4)\\
+&=(2x-1)^2-(y-2)^2\\
+&=(2x-y+1)(2x+y-3).
+\end{align*}
+
+\insight{给两组配方时，常数不能各自随意添加；两组总和仍须等于原式。}
+
+\end{solution}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 3 · 解析}
+
+\think $a^4+4$ 不能直接使用平方差。补上 $4a^2$ 后可成为 $(a^2+2)^2$，再减去 $(2a)^2$，就出现平方差。
+
+\solve \begin{align*}
+a^4+4&=a^4+4a^2+4-4a^2\\
+&=(a^2+2)^2-(2a)^2\\
+&=(a^2-2a+2)(a^2+2a+2).
+\end{align*}
+两个二次因式分别为 $(a-1)^2+1$ 与 $(a+1)^2+1$，没有实数根，因而也不能分解为有理系数的一次因式。
+
+\insight{两项平方和不能直接套平方差，但添减同一项后可能形成平方差。}
+
+\end{solution}
+
+\Needspace{8\baselineskip}
+
+\block{整体与换元：减少结构的复杂程度}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 4 · 解析}
+
+\think 把常数乘积同为 $6$ 的两对放在一起，可得到 $x^2+7x+6$ 和 $x^2+5x+6$。它们围绕 $x^2+6x+6$ 分别多、少一个 $x$，恰好形成平方差。
+
+\solve \begin{align*}
+\text{原式}&=(x^2+7x+6)(x^2+5x+6)+x^2\\
+&=[(x^2+6x+6)+x][(x^2+6x+6)-x]+x^2\\
+&=(x^2+6x+6)^2-x^2+x^2\\
+&=(x^2+6x+6)^2.
+\end{align*}
+
+\insight{四个因式不急着展开；优先寻找能产生相同部分的配对。}
+
+\end{solution}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 5 · 解析}
+
+\think $x+y$ 与 $xy$ 反复出现。换元后是 $u^2+2uv+v^2-1$，前三项配成平方。代回后的因式里还藏着一个可分解的四项式。
+
+\solve 令 $u=x+y$，$v=xy$，则
+\[u(u+2v)+(v+1)(v-1)=(u+v)^2-1=(u+v+1)(u+v-1).\]
+因此
+\begin{align*}
+\text{原式}&=(xy+x+y+1)(xy+x+y-1)\\
+&=(x+1)(y+1)(xy+x+y-1).
+\end{align*}
+
+\insight{换元后分解完，并不代表原字母下也已分解完；代回后再检查一次。}
+
+\end{solution}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 6 · 解析}
+
+\think 换元后将出现 $u^2-2uv+v^2-2u+2v+1$，把 $u-v$ 再看成整体即可配方。最后的平方底数仍然可以分解。
+
+\solve 令 $u=x+y$，$v=xy$，则
+\begin{align*}
+(u-2v)(u-2)+(v-1)^2&=(u-v)^2-2(u-v)+1\\
+&=(u-v-1)^2.
+\end{align*}
+所以
+\begin{align*}
+\text{原式}&=(x+y-xy-1)^2\\
+&=[-(x-1)(y-1)]^2=(x-1)^2(y-1)^2.
+\end{align*}
+
+\insight{完全平方也是积，但平方的底数若还能分解，就必须继续。}
+
+\end{solution}
+
+\Needspace{8\baselineskip}
+
+\block{主元整理：选一个字母建立秩序}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 7 · 解析}
+
+\think 关于 $x$ 是三次式，关于 $a$ 是二次式。按 $a$ 整理后，三个系数都含 $x+1$。次数较低只是一个选择线索，真正的依据是整理后能否出现共同因式。
+
+\solve \begin{align*}
+\text{原式}&=(x+1)a^2+(2x^2+2x)a+(x^3+x^2-x-1)\\
+&=(x+1)a^2+2x(x+1)a+(x+1)(x^2-1)\\
+&=(x+1)[a^2+2ax+x^2-1]\\
+&=(x+1)[(a+x)^2-1]\\
+&=(x+1)(x+a-1)(x+a+1).
+\end{align*}
+
+\insight{选择主元后逐项收集系数；不要把“选低次字母”当成必然成功的规则。}
+
+\end{solution}
+
+\Needspace{8\baselineskip}
+
+\block{比较系数：由目标因式倒推}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 8 · 解析}
+
+\think 代值为零提供了寻找 $x+1$ 的线索，但不必使用多项式长除法。把 $-2x^2$ 拆成 $x^2-3x^2$，把 $-13x$ 拆成 $-3x-10x$，就能直接分组。
+
+\solve \begin{align*}
+x^3-2x^2-13x-10&=(x^3+x^2)+(-3x^2-3x)+(-10x-10)\\
+&=(x+1)(x^2-3x-10)\\
+&=(x+1)(x+2)(x-5).
+\end{align*}
+
+\insight{代值寻找线索，拆项写出依据；不需要把试根和长除法另设成大专题。}
+
+\end{solution}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 9 · 解析}
+
+\think 四次式除去二次因式后，剩下二次因式；其首项系数必须为 $2$。设成 $2x^2+px+q$ 后，各次项的系数提供四个等式。
+
+\solve 设
+\[2x^4+x^3-ax^2+bx+a+b-1=(x^2+x-6)(2x^2+px+q).\]
+比较系数得
+\[p+2=1,\quad q+p-12=-a,\quad q-6p=b,\quad -6q=a+b-1.\]
+由 $p=-1$ 得 $a=13-q$、$b=q+6$，故 $a+b-1=18$。
+于是 $-6q=18$，得 $q=-3$，所以 $a=16$、$b=3$。
+
+\insight{含参数的因式条件，可以转化为有限个系数等式。}
+
+\end{solution}
+
+\Needspace{8\baselineskip}
+
+\block{巩固与选学}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 10 · 解析}
+
+\think 前面的三项可以写成 $(x^2+x)^2$，剩余项为 $2(x^2+x)+1$，再把 $x^2+x$ 看成整体。
+
+\solve \begin{align*}
+x^4+2x^3+3x^2+2x+1&=(x^2+x)^2+2(x^2+x)+1\\
+&=(x^2+x+1)^2.
+\end{align*}
+$x^2+x+1=(x+\frac12)^2+\frac34>0$，不能再分解为有理系数的一次因式。
+
+\insight{按次数寻找完全平方，再用整体思想检查剩余部分。}
+
+\end{solution}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 11 · 解析}
+
+\think 前两项能提出 $x^2y(y-1)$。其余部分要围绕 $y-1$ 改写，其中 $x-xy^2$ 可以用平方差。
+
+\solve \begin{align*}
+\text{原式}&=x^2y(y-1)-x(y^2-1)+(y-1)\\
+&=(y-1)[x^2y-x(y+1)+1]\\
+&=(y-1)[xy(x-1)-(x-1)]\\
+&=(x-1)(y-1)(xy-1).
+\end{align*}
+
+\insight{第一次分组后若仍复杂，继续围绕已经出现的共同括号调整。}
+
+\end{solution}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{挑战 1 · 解析}
+
+\think 记 $A=2x-3y$、$B=3x-2y$，则 $A+B=5(x-y)$。因此原式可写成 $A^3+B^3-(A+B)^3$，展开最后一个立方后会大量抵消。
+
+\solve 由 $(A+B)^3=A^3+3A^2B+3AB^2+B^3$，得
+\[A^3+B^3-(A+B)^3=-3AB(A+B).\]
+所以原式为
+\[-15(x-y)(2x-3y)(3x-2y).\]
+这也解释了整体负号和系数 $15$ 的来源。
+
+\insight{出现几个立方时，先比较底数的和差关系，再决定是否展开。}
+
+\end{solution}
+
+\Needspace{12\baselineskip}
+
+\subsection*{第2章 因式分解的应用}
+
+\Needspace{8\baselineskip}
+
+\block{条件求值：把已知整体用起来}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 12 · 解析}
+
+\think 三项都含 $ab$；提出后剩下 $a^2+2ab+b^2$，正好由已知的 $a+b$ 决定。
+
+\solve \[a^3b+2a^2b^2+ab^3=ab(a^2+2ab+b^2)=ab(a+b)^2=1\times3^2=9.\]
+
+\insight{先提公因式，能把分散的条件聚到同一个式子里。}
+
+\end{solution}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 13 · 解析}
+
+\think 左边加上 $2a^2b^2$ 后成为 $(a^2+b^2)^2$，右边也只含 $a^2+b^2$。这时可把目标整体设为一个新字母。
+
+\solve 移项得 $(a^2+b^2)^2=a^2+b^2+6$。令 $s=a^2+b^2\ge0$，则
+\[s^2-s-6=(s-3)(s+2)=0.\]
+所以 $s=3$ 或 $s=-2$。由 $s\ge0$ 排除 $-2$，故 $a^2+b^2=3$。
+
+\insight{换元后保留整体自带的范围条件，才能排除不符合原题的解。}
+
+\end{solution}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 14 · 解析}
+
+\think 取值相等可以转为差为零。分解后，一个因式是 $m-n$，题目已经说明它不为零，因此另一个因式必须为零。
+
+\solve 两式作差得 $(m-n)(m+n-2)=0$。由 $m\ne n$ 得 $m+n=2$。
+于是
+\[4=(m+n)^2=m^2+n^2+2mn=5+2mn,\]
+所以 $mn=-\frac12$。又
+\[a=m(m-2)=m(-n)=-mn=\frac12.\]
+
+\insight{取值相等先作差；非零条件往往用来排除其中一个零因式。}
+
+\end{solution}
+
+\Needspace{8\baselineskip}
+
+\block{简便计算：先分解，再约分}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 15 · 解析}
+
+\think 方法拓展章中的添项思想仍可使用。$t^4+64=(t^2+8)^2-(4t)^2$。用 $F(t)$ 表示代数式 $t^2+4t+8$，另一个因式正好是 $F(t-4)$，数字间相差 $4$ 就成为约分依据。
+
+\solve 设 $F(t)=t^2+4t+8$，则
+\[t^4+64=(t^2+4t+8)(t^2-4t+8)=F(t)F(t-4).\]
+分子各项分解后为
+\[F(7)F(3)\,F(15)F(11)\,F(23)F(19)\,F(31)F(27)\,F(39)F(35),\]
+分母各项分解后为
+\[F(3)F(-1)\,F(11)F(7)\,F(19)F(15)\,F(27)F(23)\,F(35)F(31).\]
+因为 $F(t)=(t+2)^2+4>0$，可以约去相同因式，得到
+\[\text{原式}=\frac{F(39)}{F(-1)}=\frac{1685}{5}=337.\]
+
+\insight{把两个二次因式写成同一个式子在不同数处的取值，可看清错位约分。}
+
+\end{solution}
+
+\Needspace{8\baselineskip}
+
+\block{平方与非负性：把条件变成限制}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 16 · 解析}
+
+\think 为了产生 $12xy$，先用 $(x+6y)^2$，它用掉 $36y^2$；剩下 $16y^2-8y+1$ 又是一个完全平方。
+
+\solve \[x^2+12xy+52y^2-8y+1=(x+6y)^2+(4y-1)^2=0.\]
+两个平方均非负，因此 $x+6y=0$、$4y-1=0$，得 $y=\frac14$、$x=-\frac32$。
+所以 $x^2-y^2=\frac94-\frac1{16}=\frac{35}{16}$。
+
+\insight{先根据交叉项确定第一个平方，再检查余下的项是否能配成第二个平方。}
+
+\end{solution}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 17 · 解析}
+
+\think 两次作差得到同一个二次式 $m^2-mn+n^2$。把它写成平方和，就能判断严格正负，不需要判别式。
+
+\solve \[a-c=m^2-mn+n^2,\qquad c-b=m^2-mn+n^2.\]
+而
+\[m^2-mn+n^2=\frac12[(m-n)^2+m^2+n^2]>0,\]
+其中严格大于零由 $m\ne n$ 保证。因此 $a>c$、$c>b$，即 $b<c<a$。
+
+\insight{比较大小先作差；严格不等式还要说明平方和为何不可能为零。}
+
+\end{solution}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 18 · 解析}
+
+\think 配方后两个平方的和不超过 $2$，每个整数的绝对值至多为 $1$。两坐标的取值范围因此很小，可以直接完整列举。
+
+\solve 原不等式等价于 $(x-1)^2+(y-1)^2\le2$。
+因为 $x,y$ 是整数，$x-1$、$y-1$ 各只能为 $-1,0,1$，即 $x,y\in\{0,1,2\}$。
+这 $3\times3=9$ 种组合的平方和都不超过 $2$，故共有 $9$ 个整数点。
+
+\insight{先用非负性缩小取值范围，再列举全部组合；不必借助圆的知识。}
+
+\end{solution}
+
+\Needspace{8\baselineskip}
+
+\block{整数问题：把等式转成有限因数对}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 19 · 解析}
+
+\think 展开该乘积得到 $6ab-9a+10b-15$，利用已知条件可得到积为 $288$。新因式必须分别满足除以 $3$ 的余数和奇偶限制。
+
+\solve 原式等价于 $(3a+5)(2b-3)=288$。记 $p=3a+5$、$q=2b-3$，则 $p-5$ 必须是 $3$ 的倍数，$q$ 为奇数。
+因为 $288=2^5\times3^2$，$q$ 只能取 $\pm1,\pm3,\pm9$。
+对应的 $p=288/q$ 为 $288,96,32,-288,-96,-32$。
+其中只有 $p=32$ 使 $p-5$ 是 $3$ 的倍数，故 $p=32$、$q=9$。
+于是 $a=9$、$b=6$，$a+b=15$。
+
+\insight{整数因数对包含负因数；系数带来的余数限制可以有效筛选。}
+
+\end{solution}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 20 · 解析}
+
+\think 总和为 $703$。剩余数之和是 $703-a-b$，等于 $ab$ 后可通过加 $1$ 写成 $(a+1)(b+1)$，再用数的范围筛选。
+
+\solve 设所选两数为 $a<b$，则 $1\le a<b\le37$，且
+\[703-a-b=ab,\qquad (a+1)(b+1)=704.\]
+令 $u=a+1$、$v=b+1$，则 $2\le u<v\le38$。
+因 $uv=704$，有 $u\ge\frac{704}{38}>18$，且 $u<\sqrt{704}<27$。
+$704=2^6\times11$，在整数 $19$ 至 $26$ 中，只有 $22$ 是其因数。
+故 $u=22$、$v=32$，即 $a=21$、$b=31$，两数之差为 $10$。
+
+\insight{列因数对之前先使用范围限制，能减少枚举并保证不漏解。}
+
+\end{solution}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 21 · 解析}
+
+\think 移项配方可得到 $(a+1)^2-b^2=2019$。因为 $a+1+b>0$，乘积为正迫使另一因数也为正，只需列正因数对。
+
+\solve 原等式等价于 $(a+1-b)(a+1+b)=2019=3\times673$。
+两个因数均为正整数，且前者小于后者，只有 $(1,2019)$ 和 $(3,673)$ 两对。
+第一对给出 $a=b=1009$，不符合 $a\ne b$；第二对给出 $a=337$、$b=335$。
+所以 $a+b=672$。
+
+\insight{配方把平方差转为整数乘积，再逐一检查正数与不相等条件。}
+
+\end{solution}
+
+\Needspace{8\baselineskip}
+
+\block{数的性质：整除、质数与完全平方}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 22 · 解析}
+
+\think 添减 $36n^2$ 后可以用平方差。得到两个正整数因数后，质数条件要求其中一个为 $1$，还要检查最后所得数确为质数。
+
+\solve \begin{align*}
+n^4-16n^2+100&=(n^2+10)^2-(6n)^2\\
+&=(n^2+6n+10)(n^2-6n+10).
+\end{align*}
+第一因数 $n^2+6n+10\ge17>1$；第二因数为 $(n-3)^2+1\ge1$。
+因此质数条件迫使 $(n-3)^2+1=1$，得 $n=3$。
+代回值为 $37$。$37$ 不被 $2,3,5$ 整除，且 $\sqrt{37}<7$，所以它是质数。
+
+\insight{“质数使一个因数为一”必须先说明两个因数都是正整数。}
+
+\end{solution}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 23 · 解析}
+
+\think 两数相邻。按 $t$ 展开后，系数依次为 $1,2,3,2,1$，与方法拓展章的完全平方结构一致。
+
+\solve 令 $t=2018$，则
+\begin{align*}
+t^2+t^2(t+1)^2+(t+1)^2&=t^4+2t^3+3t^2+2t+1\\
+&=(t^2+t+1)^2=4074343^2.
+\end{align*}
+所以原数是完全平方数。又 $t(t+1)$ 为偶数，$t^2+t+1$ 为奇数，所以原数也是奇数。
+
+\insight{相邻数先写成 $t,t+1$，数的规律就变成多项式的结构。}
+
+\end{solution}
+
+\Needspace{8\baselineskip}
+
+\block{选学挑战}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{挑战 2 · 解析}
+
+\think 新数加 $1$ 恰好等于两个旧数各加 $1$ 后的乘积。因而所有在场的数各加 $1$ 后再相乘，这个总乘积在每次操作中都保持不变。
+
+\solve 设一次操作写入 $c=a+b+ab$，则 $c+1=(a+1)(b+1)$。
+初始时所有数各加 $1$ 后的乘积为
+\[2\times\frac32\times\frac43\times\cdots\times\frac{101}{100}=101.\]
+每次操作保持这个乘积不变。设最终剩下 $r$，则 $r+1=101$，故 $r=100$。
+
+\insight{操作式含 $a+b+ab$ 时，先看“各加一之后的乘积”是否保持不变。}
+
+\end{solution}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{挑战 3 · 解析}
+
+\think 作差后可以消去非零因式 $a-b$，将 $2019$ 表示成关于 $a,b$ 的积。代入 $c$ 后，四次项抵消，留下能直接判断符号的因式。
+
+\solve 由 $a^4-b^4=2019(a-b)$，且 $a\ne b$，得
+\[(a+b)(a^2+b^2)=2019.\]
+所以 $a+b>0$，并且
+\begin{align*}
+c&=a^4-a(a+b)(a^2+b^2)\\
+&=-ab(a^2+ab+b^2).
+\end{align*}
+因为 $a^2+ab+b^2=\frac12[(a+b)^2+a^2+b^2]>0$，而 $c>0$，故 $ab<0$。
+再由
+\[c-(ab)^2=-ab(a+b)^2>0,\]
+得 $(ab)^2<c$。结合 $ab<0$，得到 $-\sqrt c<ab<0$。
+
+\insight{同值条件先作差；把得到的低次关系代回原式，能把高次问题转成符号判断。}
+
+\end{solution}
