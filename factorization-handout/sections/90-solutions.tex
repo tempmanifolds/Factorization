@@ -119,9 +119,25 @@ a^4+4&=a^4+4a^2+4-4a^2\\
 
 \end{solution}
 
+\ifstudentnotes\else
+\begin{tcolorbox}[knotweld,breakable=false]
+\textbf{常见结构：$xy,x,y,1$ 的四项式}\par\smallskip
+练习 5 和练习 6 中，代回后出现了由 $xy,x,y,1$ 组成的四项式。下面四种结构很常见：
+\begin{align*}
+xy+x+y+1&=(x+1)(y+1),\\
+xy-x-y+1&=(x-1)(y-1),\\
+xy+x-y-1&=(x-1)(y+1),\\
+xy-x+y-1&=(x+1)(y-1).
+\end{align*}
+看到这类四项式，可先按 $x$ 分组，检查两组能否出现相同括号。一次项与常数项的符号要匹配；例如练习 6 的底数为
+\[x+y-xy-1=-(x-1)(y-1).\]
+换元后要代回，完全平方的底数也要继续检查。
+\end{tcolorbox}
+\fi
+
 \Needspace{8\baselineskip}
 
-\block{主元整理：选一个字母建立秩序}
+\block{主元法：选择一个字母}
 
 \Needspace{7\baselineskip}
 
@@ -143,13 +159,75 @@ a^4+4&=a^4+4a^2+4-4a^2\\
 
 \Needspace{8\baselineskip}
 
-\block{比较系数：由目标因式倒推}
+\block{因式定理：从代值找因式}
 
 \Needspace{7\baselineskip}
 
 \begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 8 · 解析}
 
-\think 代值为零提供了寻找 $x+1$ 的线索，但不必使用多项式长除法。把 $-2x^2$ 拆成 $x^2-3x^2$，把 $-13x$ 拆成 $-3x-10x$，就能直接分组。
+\think 首项系数不是 $1$，分数根也在筛选范围内；但先试 $1$ 就能找到一个简单的一次因式。
+
+\solve 记原式为 $F(x)$，则 $F(1)=6-11+1+4=0$，所以
+\[F(x)=(x-1)(6x^2-5x-4)=(x-1)(3x-4)(2x+1).\]
+对应的三个根为 $1,4/3,-1/2$；分子分别整除 $4$，分母分别整除 $6$。
+
+\insight{候选根包括分数，但不必逐个试完；先找到一个容易的根，再处理低次商。}
+
+\end{solution}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 9 · 解析}
+
+\think 先代值确定 $x-1$ 与 $x+1$，也可以令 $t=x^2$ 分解二次式；两种路径都要继续检查剩余因式。
+
+\solve $F(1)=F(-1)=0$，故 $x^2-1$ 是因式。
+\[F(x)=(x^2-1)(x^2-4)=(x-1)(x+1)(x-2)(x+2).\]
+全部有理根为 $1,-1,2,-2$。也可先令 $t=x^2$，用 $t^2-5t+4=(t-1)(t-4)$ 得到相同结果。
+
+\insight{因式定理可以与整体法配合；降次以后仍须继续分解。}
+
+\end{solution}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 10 · 解析}
+
+\think 两个因式分别给出 $F(-1)=0$ 与 $F(-2)=0$，可列出关于 $a,b$ 的两个一次方程。
+
+\solve 记 $F(x)=x^3+ax^2+bx+8$。由因式定理，
+\[F(-1)=a-b+7=0,\qquad F(-2)=4a-2b=0.\]
+所以 $b=2a$，再代入第一式得 $a=7$、$b=14$，故
+\[a+b=21.\]
+
+\insight{已知一次因式，先代入对应的根，把因式条件转成系数方程。}
+
+\end{solution}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 11 · 解析}
+
+\think 先用正性判断是否有实数根，再把 $x^2$ 看成整体。没有一次因式，并不排除两个二次因式。
+
+\solve 对所有实数 $x$，$x^4+3x^2+2\ge2>0$，所以它没有实数根，更没有有理根，也没有有理系数的一次因式。
+然而
+\[x^4+3x^2+2=(x^2+1)(x^2+2).\]
+两个二次因式对实数 $x$ 都为正，不能再分解为有理系数的一次因式。因此原四次式能分解，分解结果在有理系数范围内已彻底。
+
+\insight{没有有理根，只排除有理系数的一次因式；四次及以上还要检查更高次因式。}
+
+\end{solution}
+
+\Needspace{8\baselineskip}
+
+\block{比较系数：由目标因式倒推}
+
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 12 · 解析}
+
+\think 由因式定理，代入 $x=-1$ 得零，就能确定因式 $x+1$。这里也可不用长除法，而把 $-2x^2$ 拆成 $x^2-3x^2$，把 $-13x$ 拆成 $-3x-10x$，直接分组。
 
 \solve \begin{align*}
 x^3-2x^2-13x-10&=(x^3+x^2)+(-3x^2-3x)+(-10x-10)\\
@@ -157,13 +235,13 @@ x^3-2x^2-13x-10&=(x^3+x^2)+(-3x^2-3x)+(-10x-10)\\
 &=(x+1)(x+2)(x-5).
 \end{align*}
 
-\insight{代值寻找线索，拆项写出依据；不需要把试根和长除法另设成大专题。}
+\insight{因式定理确定目标因式，再用拆项或逐项相除求出商。}
 
 \end{solution}
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 9 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 13 · 解析}
 
 \think 四次式除去二次因式后，剩下二次因式；其首项系数必须为 $2$。设成 $2x^2+px+q$ 后，各次项的系数提供四个等式。
 
@@ -184,7 +262,7 @@ x^3-2x^2-13x-10&=(x^3+x^2)+(-3x^2-3x)+(-10x-10)\\
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 10 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 14 · 解析}
 
 \think 前面的三项可以写成 $(x^2+x)^2$，剩余项为 $2(x^2+x)+1$，再把 $x^2+x$ 看成整体。
 
@@ -200,7 +278,7 @@ $x^2+x+1=(x+\frac12)^2+\frac34>0$，不能再分解为有理系数的一次因�
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 11 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 15 · 解析}
 
 \think 前两项能提出 $x^2y(y-1)$。其余部分要围绕 $y-1$ 改写，其中 $x-xy^2$ 可以用平方差。
 
@@ -241,7 +319,7 @@ $x^2+x+1=(x+\frac12)^2+\frac34>0$，不能再分解为有理系数的一次因�
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 12 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 16 · 解析}
 
 \think 三项都含 $ab$；提出后剩下 $a^2+2ab+b^2$，正好由已知的 $a+b$ 决定。
 
@@ -253,7 +331,7 @@ $x^2+x+1=(x+\frac12)^2+\frac34>0$，不能再分解为有理系数的一次因�
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 13 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 17 · 解析}
 
 \think 左边加上 $2a^2b^2$ 后成为 $(a^2+b^2)^2$，右边也只含 $a^2+b^2$。这时可把目标整体设为一个新字母。
 
@@ -267,7 +345,7 @@ $x^2+x+1=(x+\frac12)^2+\frac34>0$，不能再分解为有理系数的一次因�
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 14 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 18 · 解析}
 
 \think 取值相等可以转为差为零。分解后，一个因式是 $m-n$，题目已经说明它不为零，因此另一个因式必须为零。
 
@@ -287,7 +365,7 @@ $x^2+x+1=(x+\frac12)^2+\frac34>0$，不能再分解为有理系数的一次因�
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 15 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 19 · 解析}
 
 \think 方法拓展章中的添项思想仍可使用。$t^4+64=(t^2+8)^2-(4t)^2$。用 $F(t)$ 表示代数式 $t^2+4t+8$，另一个因式正好是 $F(t-4)$，数字间相差 $4$ 就成为约分依据。
 
@@ -310,7 +388,7 @@ $x^2+x+1=(x+\frac12)^2+\frac34>0$，不能再分解为有理系数的一次因�
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 16 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 20 · 解析}
 
 \think 为了产生 $12xy$，先用 $(x+6y)^2$，它用掉 $36y^2$；剩下 $16y^2-8y+1$ 又是一个完全平方。
 
@@ -324,7 +402,7 @@ $x^2+x+1=(x+\frac12)^2+\frac34>0$，不能再分解为有理系数的一次因�
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 17 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 21 · 解析}
 
 \think 两次作差得到同一个二次式 $m^2-mn+n^2$。把它写成平方和，就能判断严格正负，不需要判别式。
 
@@ -339,7 +417,7 @@ $x^2+x+1=(x+\frac12)^2+\frac34>0$，不能再分解为有理系数的一次因�
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 18 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 22 · 解析}
 
 \think 配方后两个平方的和不超过 $2$，每个整数的绝对值至多为 $1$。两坐标的取值范围因此很小，可以直接完整列举。
 
@@ -357,7 +435,7 @@ $x^2+x+1=(x+\frac12)^2+\frac34>0$，不能再分解为有理系数的一次因�
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 19 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 23 · 解析}
 
 \think 展开该乘积得到 $6ab-9a+10b-15$，利用已知条件可得到积为 $288$。新因式必须分别满足除以 $3$ 的余数和奇偶限制。
 
@@ -373,7 +451,7 @@ $x^2+x+1=(x+\frac12)^2+\frac34>0$，不能再分解为有理系数的一次因�
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 20 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 24 · 解析}
 
 \think 总和为 $703$。剩余数之和是 $703-a-b$，等于 $ab$ 后可通过加 $1$ 写成 $(a+1)(b+1)$，再用数的范围筛选。
 
@@ -390,7 +468,7 @@ $704=2^6\times11$，在整数 $19$ 至 $26$ 中，只有 $22$ 是其因数。
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 21 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 25 · 解析}
 
 \think 移项配方可得到 $(a+1)^2-b^2=2019$。因为 $a+1+b>0$，乘积为正迫使另一因数也为正，只需列正因数对。
 
@@ -409,7 +487,7 @@ $704=2^6\times11$，在整数 $19$ 至 $26$ 中，只有 $22$ 是其因数。
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 22 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 26 · 解析}
 
 \think 添减 $36n^2$ 后可以用平方差。得到两个正整数因数后，质数条件要求其中一个为 $1$，还要检查最后所得数确为质数。
 
@@ -427,7 +505,7 @@ n^4-16n^2+100&=(n^2+10)^2-(6n)^2\\
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 23 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 27 · 解析}
 
 \think 两数相邻。按 $t$ 展开后，系数依次为 $1,2,3,2,1$，与方法拓展章的完全平方结构一致。
 

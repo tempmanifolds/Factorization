@@ -9,6 +9,7 @@
 
 % 挑战题 ★ 用 Zapf Dingbats 绘制，不依赖系统字体（Optima 等）是否含 U+2605
 \usepackage{pifont}
+\usetikzlibrary{decorations.pathreplacing}
 
 % 页眉线（可选）；老师偏好极简时可整行注释掉
 %\runningthread{因式分解专题讲义 · 课前自学讲义}
@@ -71,6 +72,27 @@
   {\thesubsection}{0.65em}{}
 \titlespacing*{\subsection}{0pt}{16pt plus 3pt}{7pt}
 \hypersetup{pdftitle={因式分解专题讲义},pdfauthor={数学专题讲义}}
+
+% 封面：四块面积相加，等于矩形两边的乘积。
+\definecolor{tilegreen}{HTML}{2E806D}
+\newcommand{\factorcoverfigure}{%
+\begin{tikzpicture}[x=0.9cm,y=0.9cm,line width=0.6pt,
+  every node/.style={text=inkiron,font=\normalsize}]
+  \fill[indigo!23!white] (0,0) rectangle (2.55,2.55);
+  \fill[weld!40!white] (2.55,0) rectangle (3.65,2.55);
+  \fill[madder!24!white] (0,2.55) rectangle (2.55,3.45);
+  \fill[tilegreen!32!white] (2.55,2.55) rectangle (3.65,3.45);
+  \draw[inkiron!65] (0,0) rectangle (3.65,3.45);
+  \draw[inkiron!45] (2.55,0)--(2.55,3.45) (0,2.55)--(3.65,2.55);
+  \node[font=\large,text=indigo] at (1.275,1.275) {$x^2$};
+  \node[font=\large,text=weld!65!inkiron] at (3.10,1.275) {$px$};
+  \node[font=\large,text=madder] at (1.275,3.0) {$qx$};
+  \node[font=\large,text=tilegreen!75!black] at (3.10,3.0) {$pq$};
+  \node[font=\large] at (1.825,-0.65)
+    {$\textcolor{indigo}{x^2}+(p+q)x+\textcolor{tilegreen!75!black}{pq}=(x+p)(x+q)$};
+\end{tikzpicture}}
+% 只替换封面主图；讲义中的结纹图标仍使用原来的 \loomtile。
+\renewcommand{\weaveemblem}[1]{\factorcoverfigure}
 
 \newcommand{\factorfigure}{%
 \begin{center}
