@@ -4,53 +4,11 @@
 
 \subsection{条件求值：把已知整体用起来}
 
-\topicline{先从和与积直接代入，再学习条件重组、参数恒等式与同值作差。}
+\topicline{先分解并利用恒等式求参数，再通过条件相加或同值作差求整体。}
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 18 （矩形条件整体代入）}
-
-边长为 $a,b$ 的矩形周长为 $14$，面积为 $10$，求 $a^2b+ab^2$ 的值。
-
-\end{problem}
-
-\Needspace{6\baselineskip}
-
-\begin{solution}{例题 18 · 讲解}
-
-\think 题目给出了 $a+b$ 和 $ab$，而目标式含共同因式 $ab$。先分解就能直接使用两个条件，不必分别求边长。
-
-\solve 由 $2(a+b)=14$、$ab=10$，得 $a+b=7$。因此
-\[a^2b+ab^2=ab(a+b)=10\times7=70.\]
-
-\insight{条件给出和与积时，先尝试把目标式改写成和与积的组合。}
-
-\end{solution}
-
-\Needspace{12\baselineskip}
-
-\begin{problem}{例题 19 （条件没有直接给出所需括号）}
-
-已知 $a-b=3$、$b+c=-5$，求 $ac-bc+a^2-ab$ 的值。
-
-\end{problem}
-
-\Needspace{6\baselineskip}
-
-\begin{solution}{例题 19 · 讲解}
-
-\think 分组后可提出 $a-b$；另一个因式是 $a+c$，虽然题目没有直接给出它，但两个已知关系相加即可得到。
-
-\solve \[ac-bc+a^2-ab=(a-b)c+a(a-b)=(a-b)(a+c).\]
-又 $a+c=(a-b)+(b+c)=3-5=-2$，所以原式为 $3\times(-2)=-6$。
-
-\insight{分解后缺少哪个整体，就从已有条件中寻找它的和差表示。}
-
-\end{solution}
-
-\Needspace{12\baselineskip}
-
-\begin{problem}{例题 20 （恒等式中的参数不能漏解）}
+\begin{problem}{例题 14 （恒等式中的参数不能漏解）}
 
 设 $y=ax$，若代数式 $(x+y)(x-2y)+3y(x+y)$ 化简为 $x^2$，求 $a$。这里“化简为”表示关于 $x$ 的恒等式。
 
@@ -58,7 +16,7 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 20 · 讲解}
+\begin{solution}{例题 14 · 讲解}
 
 \think 两项都含 $x+y$，合并后能得到一个平方。将 $y=ax$ 代入后应比较 $x^2$ 的系数，平方等于 $1$ 有两种可能。
 
@@ -75,7 +33,7 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 21 （相加以后要检查两种可能）}
+\begin{problem}{例题 15 （相加以后要检查两种可能）}
 
 实数 $x,y$ 满足 $x^2+xy+y=14$、$y^2+xy+x=28$，求 $x+y$。
 
@@ -83,7 +41,7 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 21 · 讲解}
+\begin{solution}{例题 15 · 讲解}
 
 \think 两式相加得到 $(x+y)^2+(x+y)$；没有正数条件，不能只保留正的候选值。还需利用两式之差确认候选值能满足原条件。
 
@@ -100,19 +58,13 @@
 
 \methodcard{先分解目标式，观察出现的括号是否由已知条件决定。若条件给的是一个整体，就优先求这个整体，避免无必要地分别求每个字母。}{乘积为零要分别讨论；没有正数条件不能自行补上；候选值要确认能满足原条件。}
 
-\begin{problem}{练习 16 （平方结构中的和与积）}
-
-已知 $a+b=3$、$ab=1$，求 $a^3b+2a^2b^2+ab^3$ 的值。
-
-\end{problem}
-
-\begin{problem}{练习 17 （不求字母，只求一个整体）}
+\begin{problem}{练习 16 （不求字母，只求一个整体）}
 
 实数 $a,b$ 满足 $a^4+b^4=a^2-2a^2b^2+b^2+6$，求 $a^2+b^2$。
 
 \end{problem}
 
-\begin{problem}{练习 18 （同一代数式在不同数处取同值）}
+\begin{problem}{练习 17 （同一代数式在不同数处取同值）}
 
 两个不等实数 $m,n$ 满足 $m^2-2m=a$、$n^2-2n=a$、$m^2+n^2=5$，求 $a$。
 
@@ -128,7 +80,7 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 22 （大数先换成字母）}
+\begin{problem}{例题 16 （大数先换成字母）}
 
 计算 $\displaystyle\frac{2004^3-2\times2004^2-2002}{2004^3+2004^2-2005}$。
 
@@ -136,7 +88,7 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 22 · 讲解}
+\begin{solution}{例题 16 · 讲解}
 
 \think $2002=t-2$、$2005=t+1$。写成多项式以后，分子、分母都能通过分组分解，公共因式才清楚。
 
@@ -154,7 +106,7 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 23 （连乘约分从每一项开始）}
+\begin{problem}{例题 17 （连乘约分从每一项开始）}
 
 计算
 \[
@@ -166,7 +118,7 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 23 · 讲解}
+\begin{solution}{例题 17 · 讲解}
 
 \think 对应项具有同一种结构。第 $k$ 组的分子为 $2k(2k+3)+2$，分母为 $(2k-1)(2k+2)+2$，分解后能先约掉同一组的公共因式，再发生相邻组之间的约分。
 
@@ -184,7 +136,7 @@
 
 \methodcard{观察数字的和差关系，用恰当的字母表示；先分解一组对应项，找出相同因式，再判断首尾与项数如何对应。}{约去的因式必须非零。约分依据是相同的非零因式，不能只因数字排列整齐就约。}
 
-\begin{problem}{练习 19 （添项之后出现错位约分）}
+\begin{problem}{练习 18 （添项之后出现错位约分）}
 
 计算
 \[
@@ -204,7 +156,7 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 24 （平方和为零）}
+\begin{problem}{例题 18 （平方和为零）}
 
 已知实数 $m,n$，当 $x=m$ 时，多项式 $x^2+2x+n^2$ 的值为 $-1$；求 $x=-m$ 时该多项式的值。
 
@@ -212,7 +164,7 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 24 · 讲解}
+\begin{solution}{例题 18 · 讲解}
 
 \think 代入条件得到 $m^2+2m+n^2=-1$，配方后两个非负数的和为零，从而可同时确定 $m,n$。
 
@@ -227,7 +179,7 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 25 （观察到最大值，再解释为什么）}
+\begin{problem}{例题 19 （观察到最大值，再解释为什么）}
 
 观察 $1\times49,2\times48,\ldots,25\times25,\ldots,49\times1$。
 \begin{enumerate}[label=(\arabic*)]
@@ -239,7 +191,7 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 25 · 讲解}
+\begin{solution}{例题 19 · 讲解}
 
 \think 第一组两因数之和为 $50$，第二组之和为 $60$。恒等式 $4ab=(a+b)^2-(a-b)^2$ 把乘积与一个非负平方联系起来。
 
@@ -256,19 +208,19 @@
 
 \methodcard{交叉项帮助确定怎样配方。写成平方和后，再看条件要求它等于零、受到上界限制，还是用于说明大小关系。配方是在为后续判断服务。}{平方和为零必须每项非负；求最大值还要说明等号在题目允许范围内能够取到。}
 
-\begin{problem}{练习 20 （交叉项告诉我们怎样配方）}
+\begin{problem}{练习 19 （交叉项告诉我们怎样配方）}
 
 实数 $x,y$ 满足 $x^2+12xy+52y^2-8y+1=0$，求 $x^2-y^2$。
 
 \end{problem}
 
-\begin{problem}{练习 21 （作差比较三个数）}
+\begin{problem}{练习 20 （作差比较三个数）}
 
 已知实数 $m\ne n$，$a=2m^2-mn$、$b=mn-2n^2$、$c=m^2-n^2$。用“$<$”表示 $a,b,c$ 的大小关系。
 
 \end{problem}
 
-\begin{problem}{练习 22 （巩固：平方限制整数取值）}
+\begin{problem}{练习 21 （巩固：平方限制整数取值）}
 
 在平面直角坐标系中，满足 $x^2+y^2\le2x+2y$ 的整数点 $(x,y)$ 有多少个？
 
@@ -282,7 +234,7 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 26 （把和差关系变成因数对）}
+\begin{problem}{例题 20 （把和差关系变成因数对）}
 
 求方程 $xy-2x-2y+7=0$ 的全部整数解，其中 $x\le y$。
 
@@ -290,7 +242,7 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 26 · 讲解}
+\begin{solution}{例题 20 · 讲解}
 
 \think $(x-2)(y-2)$ 展开后比 $xy-2x-2y$ 多 $4$，因此方程两边同时调整 $4$，可以转为乘积等于 $-3$。
 
@@ -303,32 +255,11 @@
 
 \end{solution}
 
-\Needspace{12\baselineskip}
-
-\begin{problem}{例题 27 （正整数不代表变形后的因式为正）}
-
-正整数 $x,y$ 满足 $(2x-5)(2y-5)=25$，求 $x+y$ 的全部可能值。
-
-\end{problem}
-
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 27 · 讲解}
+\methodcard{看见 $xy$ 与 $x,y$ 的一次项，可尝试凑成 $(x-r)(y-s)$。乘积为固定整数后，列正负因数对，再将原条件逐项翻译并筛选。例如 $xy+x+y=M$ 等价于 $(x+1)(y+1)=M+1$；若 $x,y$ 是正整数，则两个新因数都至少为 $2$。}{整数可以为负；原字母为正，也不代表平移后的因式为正。}
 
-\think 两个因式同号，但 $x,y$ 为正整数并不能直接说明它们为正。各因式是至少为 $-3$ 的奇数，负因数对需要单独排除。
-
-\solve 记 $u=2x-5$、$v=2y-5$，则 $u,v$ 为奇整数，且 $u,v\ge-3$。
-正因数对为 $(1,25),(5,5),(25,1)$，分别给出 $(x,y)=(3,15),(5,5),(15,3)$。
-负因数对为 $(-1,-25),(-5,-5),(-25,-1)$，每一对都至少有一个因数小于 $-3$，均不符合条件。
-故 $x+y$ 为 $18$ 或 $10$。
-
-\insight{原字母的范围要翻译成新因式的范围，不能直接沿用“正数”。}
-
-\end{solution}
-
-\methodcard{看见 $xy$ 与 $x,y$ 的一次项，可尝试凑成 $(x-r)(y-s)$。乘积为固定整数后，列正负因数对，再将原条件逐项翻译并筛选。}{整数可以为负；原字母为正，也不代表平移后的因式为正。}
-
-\begin{problem}{练习 23 （系数与整数条件一起筛选）}
+\begin{problem}{练习 22 （系数与整数条件一起筛选）}
 
 整数 $a,b$ 满足 $6ab=9a-10b+303$，求 $a+b$。
 
@@ -336,13 +267,13 @@
 
 \end{problem}
 
-\begin{problem}{练习 24 （把被选走的两数也移到同一边）}
+\begin{problem}{练习 23 （把被选走的两数也移到同一边）}
 
 从 $1,2,\ldots,37$ 中选出两个不同的数，使其余 $35$ 个数之和等于这两个数之积。求所选两数之差的绝对值。
 
 \end{problem}
 
-\begin{problem}{练习 25 （移项配方后再列因数对）}
+\begin{problem}{练习 24 （移项配方后再列因数对）}
 
 两个互不相等的正整数 $a,b$ 满足 $a^2-b^2=2018-2a$，求 $a+b$。
 
@@ -358,29 +289,7 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 28 （整除的依据要写成整数乘积）}
-
-若 $k$ 为任意整数，$(2k+3)^2-4k^2$ 的值总能被下列哪个数整除？A．$2$；B．$3$；C．$5$；D．$7$。
-
-\end{problem}
-
-\Needspace{6\baselineskip}
-
-\begin{solution}{例题 28 · 讲解}
-
-\think 两个平方的底数只相差 $3$，分解后会直接出现因数 $3$。其他选项可用一个反例排除。
-
-\solve \[(2k+3)^2-(2k)^2=3(4k+3).\]
-因为 $4k+3$ 是整数，所以总能被 $3$ 整除。
-取 $k=0$ 时值为 $9$，不能被 $2,5,7$ 整除，故选 B。
-
-\insight{证明整除要展示“所需因数乘以整数”；排除恒成立的说法可以找反例。}
-
-\end{solution}
-
-\Needspace{12\baselineskip}
-
-\begin{problem}{例题 29 （不要把两个五次式混为一谈）}
+\begin{problem}{例题 21 （不要把两个五次式混为一谈）}
 
 将某个正整数 $n$ 代入 $n^5-n$，四个结果中仅一个正确。它是哪一个？A．$7770$；B．$7775$；C．$7776$；D．$7779$。
 
@@ -388,9 +297,9 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 29 · 讲解}
+\begin{solution}{例题 21 · 讲解}
 
-\think $n^5-n=n(n-1)(n+1)(n^2+1)$，其中前三个因数是连续整数，乘积必被 $6$ 整除。这已经足以排除三个选项，无须套用五个连续整数的结论。
+\think $n^5-n=n(n-1)(n+1)(n^2+1)$，其中前三个因数是连续整数，乘积必被 $6$ 整除。这可先排除两个奇数选项，再检查因数 $5$；不必套用五个连续整数的结论。
 
 \solve \[n^5-n=n(n^4-1)=n(n-1)(n+1)(n^2+1).\]
 连续三个整数中有一个偶数、一个 $3$ 的倍数，因此该式必被 $6$ 整除。
@@ -405,7 +314,7 @@ B、D 为奇数；C 的各位数字和为 $27$，虽能被 $3$ 整除，但需�
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 30 （完全平方数转成平方差）}
+\begin{problem}{例题 22 （完全平方数转成平方差）}
 
 自然数 $n$ 满足 $n^2+15n+26$ 是完全平方数，求 $n$。
 
@@ -413,7 +322,7 @@ B、D 为奇数；C 的各位数字和为 $27$，虽能被 $3$ 整除，但需�
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 30 · 讲解}
+\begin{solution}{例题 22 · 讲解}
 
 \think 一次项系数为奇数，直接配方会出现分数。先乘 $4$，可把等式变成两个整数平方的差为 $121$，完整列举因数对。
 
@@ -430,7 +339,7 @@ B、D 为奇数；C 的各位数字和为 $27$，虽能被 $3$ 整除，但需�
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 31 （公因数与最大公因数）}
+\begin{problem}{例题 23 （公因数与最大公因数）}
 
 对所有大于 $2$ 的正整数 $n$，求这些整数 $n^5-5n^3+4n$ 的最大公因数。
 
@@ -438,7 +347,7 @@ B、D 为奇数；C 的各位数字和为 $27$，虽能被 $3$ 整除，但需�
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 31 · 讲解}
+\begin{solution}{例题 23 · 讲解}
 
 \think 这次的五次式确实能分解为五个连续整数的积。证明它们都被 $120$ 整除只是第一步；还需找到一个取值恰为 $120$，才能确定最大公因数。
 
@@ -452,9 +361,46 @@ B、D 为奇数；C 的各位数字和为 $27$，虽能被 $3$ 整除，但需�
 
 \end{solution}
 
-\methodcard{求整除先展示整数乘积；质数条件要先确认两个因数均为正整数；完全平方条件可转成平方差；最大公因数需要两个方向的依据。}{$n^5-n$ 与 $n^5-5n^3+4n$ 的因式结构不同，不能共用“五个连续整数”的解释。}
+\Needspace{12\baselineskip}
 
-\begin{problem}{练习 26 （质数限制两个正因数）}
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{problem}{例题 24 （四个连续整数的积加一）}
+
+设 $n$ 为正整数，证明 $(n+2020)(n+2021)(n+2022)(n+2023)+1$ 是完全平方数。
+
+\end{problem}
+
+\Needspace{6\baselineskip}
+
+\begin{solution}[breakable=false]{例题 24 · 讲解}
+
+\think 先用 $N=n+2020$ 简化数字。把首尾两项配对、中间两项配对，两组乘积的一次项相同、常数项相差 $2$，正好接上第一章的均值换元。
+
+\solve 令 $N=n+2020$，则
+
+\begin{align*}
+\text{原式}&=N(N+1)(N+2)(N+3)+1\\
+&=[N(N+3)][(N+1)(N+2)]+1\\
+&=(N^2+3N)(N^2+3N+2)+1\\
+&=(N^2+3N+1)^2.
+\end{align*}
+
+因为 $N^2+3N+1$ 是整数，所以原式是完全平方数。更一般地，任意整数 $m$ 都满足
+
+\[
+m(m+1)(m+2)(m+3)+1=(m^2+3m+1)^2.
+\]
+
+\insight{配对先让一次项相同；写成平方后，还要说明平方的底数是整数。}
+
+\end{solution}
+
+\end{minipage}\par\medskip
+
+\methodcard{求整除先展示整数乘积，或利用连续整数中必有指定整数的倍数；同时能被两个互质整数整除，才可直接推出能被它们的积整除。质数条件要先确认两个因数均为正整数；完全平方条件可转成平方差，证明完全平方数也可利用连续整数的配对与均值换元；最大公因数需要两个方向的依据。}{$n^5-n$ 与 $n^5-5n^3+4n$ 的因式结构不同，不能共用“五个连续整数”的解释。}
+
+\begin{problem}{练习 25 （质数限制两个正因数）}
 
 已知 $n$ 为正整数，且 $n^4-16n^2+100$ 是质数，求 $n$。
 
@@ -462,7 +408,7 @@ B、D 为奇数；C 的各位数字和为 $27$，虽能被 $3$ 整除，但需�
 
 \end{problem}
 
-\begin{problem}{练习 27 （发现完全平方数的结构）}
+\begin{problem}{练习 26 （发现完全平方数的结构）}
 
 证明 $2018^2+2018^2\times2019^2+2019^2$ 是完全平方数。
 
@@ -474,11 +420,11 @@ B、D 为奇数；C 的各位数字和为 $27$，虽能被 $3$ 整除，但需�
 
 \subsection{几何中的数量关系}
 
-\topicline{将图形关系译成平方和与乘积，用面积分割求解。}
+\topicline{将图形关系译成平方和与乘积；用平方非负判断形状，用面积分割求数量。}
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 32 （面积关系里的代数恒等式）}
+\begin{problem}{例题 25 （面积关系里的代数恒等式）}
 
 如图，分别以正数 $a,b,m,n$ 为边长作正方形，$m>n$，且 $am-bn=2$、$an+bm=4$。
 图①是边长为 $a,b$ 的两个正方形；图②中 $AB=m$、$DC=n$、$BP=m$、$PC=n$，$AB,DC$ 均垂直于 $BC$，阴影为 $\triangle APD$。
@@ -492,7 +438,7 @@ B、D 为奇数；C 的各位数字和为 $27$，虽能被 $3$ 整除，但需�
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 32 · 讲解}
+\begin{solution}{例题 25 · 讲解}
 
 \think 两个条件平方相加后能整理为 $(a^2+b^2)(m^2+n^2)$。图形面积分别给出 $a^2+b^2$ 与 $(m+n)^2$，从而求出 $mn$；阴影面积用梯形减去两侧直角三角形即可。
 
@@ -513,7 +459,17 @@ B、D 为奇数；C 的各位数字和为 $27$，虽能被 $3$ 整除，但需�
 
 \end{solution}
 
-\methodcard{把长度、面积转为代数式，先求平方和与乘积，再由面积分割求解。}{按已给图形关系列式；区分正方形、梯形和三角形的面积公式。}
+\methodcard{把长度、面积转为代数式，先求平方和与乘积，再由面积分割求解。三边的平方与两两乘积相联系时，也可尝试配成差的平方和，用非负性判断三边是否相等。}{按已给图形关系列式；区分正方形、梯形和三角形的面积公式。}
+
+\Needspace{12\baselineskip}
+
+\begin{problem}{练习 27 （三边关系化为平方和）}
+
+已知 $a,b,c$ 为 $\triangle ABC$ 的三边，且 $a^2+b^2+c^2=ab+bc+ca$。判断这个三角形的形状，并说明理由。
+
+\hint{两边乘以 $2$ 后移项，尝试配成三组差的平方。}
+
+\end{problem}
 
 \Needspace{12\baselineskip}
 

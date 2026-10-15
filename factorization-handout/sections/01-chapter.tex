@@ -123,7 +123,7 @@ x^4-7x^2+1&=x^4+2x^2+1-9x^2\\
 
 \subsection{整体与换元：减少结构的复杂程度}
 
-\topicline{先用换元处理高次式，再练习配对制造整体，代回后继续检查。}
+\topicline{先用换元处理高次式，再取中间式构造平方差，代回后继续检查；练习配对与双整体换元。}
 
 \Needspace{12\baselineskip}
 
@@ -153,7 +153,36 @@ x^4+x^2+1&=(x^2+1)^2-x^2=(x^2-x+1)(x^2+x+1).
 
 \end{solution}
 
-\methodcard{圈出相同部分；必要时先重组使它出现；用新字母简化；用已学方法分解；换回原字母并继续检查。整体出现的次数没有固定门槛。}{换元后必须代回；得到完全平方或高次因式后仍须检查分解是否彻底。}
+\Needspace{12\baselineskip}
+
+\begin{problem}{例题 5 （均值换元：取两个因子的中间式）}
+
+分解因式：$(n+1)(n+2)(n^2+3n)+1$。
+
+\end{problem}
+
+\Needspace{6\baselineskip}
+
+\begin{solution}{例题 5 · 讲解}
+
+\think 先把 $(n+1)(n+2)$ 相乘，得到 $n^2+3n+2$。它与另一个因子 $n^2+3n$ 相差 $2$；取中间式 $n^2+3n+1$ 为 $t$，就能把两因子写成 $t-1$ 与 $t+1$。
+
+\solve 令 $t=n^2+3n+1$，则
+
+\begin{align*}
+(n+1)(n+2)(n^2+3n)+1
+&=(n^2+3n+2)(n^2+3n)+1\\
+&=(t+1)(t-1)+1\\
+&=t^2=(n^2+3n+1)^2.
+\end{align*}
+
+在有理系数范围内，$n^2+3n+1$ 不能继续分解，因式分解到此完成。
+
+\insight{两因子相差 $2$ 时，取中间式作整体，优先检查 $U(U+2)+1=(U+1)^2$。}
+
+\end{solution}
+
+\methodcard{圈出相同部分；必要时先重组使它出现；用新字母简化；用已学方法分解；换回原字母并继续检查。两个因子相差 $2$ 时，可取中间式作整体。反复出现 $x+y$、$xy$ 时，也可同时设两个新字母。}{换元后必须代回；得到完全平方或高次因式后仍须检查分解是否彻底。识别三个整体的平方时，用 $(A+B+C)^2=A^2+B^2+C^2+2AB+2AC+2BC$ 核对三个交叉项及其符号。}
 
 \begin{problem}{练习 4 （先配对，再找整体）}
 
@@ -183,7 +212,7 @@ x^4+x^2+1&=(x^2+1)^2-x^2=(x^2-x+1)(x^2+x+1).
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 5 （把另一个字母当系数）}
+\begin{problem}{例题 6 （把另一个字母当系数）}
 
 分解因式：$x^2+xy-6y^2+x+13y-6$。
 
@@ -191,7 +220,7 @@ x^4+x^2+1&=(x^2+1)^2-x^2=(x^2-x+1)(x^2+x+1).
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 5 · 讲解}
+\begin{solution}{例题 6 · 讲解}
 
 \think 把 $y$ 暂时视作常数，原式是关于 $x$ 的二次三项式。常数部分 $-6y^2+13y-6$ 可以先分解，再检查两个括号的一次项和。
 
@@ -208,7 +237,40 @@ x^4+x^2+1&=(x^2+1)^2-x^2=(x^2-x+1)(x^2+x+1).
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 6 （循环式里寻找相同括号）}
+\begin{problem}{例题 7 （主元的系数可以含多个字母）}
+
+分解因式：$a^2bc+ac^2+acd-abd-cd-d^2$。
+
+\end{problem}
+
+\Needspace{6\baselineskip}
+
+\begin{solution}{例题 7 · 讲解}
+
+\think 按 $a$ 的降幂整理，二次项系数是 $bc$，常数项是 $-d(c+d)$。尝试用 $ab,ac$ 配首项，用 $c+d,-d$ 配常数项，再检查交叉项能否恢复一次项。
+
+\solve 先按 $a$ 的次数收集各项：
+
+\begin{align*}
+\text{原式}&=bc\,a^2+(c^2+cd-bd)a-d(c+d)\\
+&=(ab+c+d)(ac-d).
+\end{align*}
+
+其中两个首项相乘为 $a^2bc$，两个常数部分相乘为 $-d(c+d)$，交叉项为
+
+\[
+(ab)(-d)+(ac)(c+d)=a(c^2+cd-bd),
+\]
+
+与原式关于 $a$ 的一次项一致。这个分解没有除以任何字母，因此字母取零时也成立。
+
+\insight{多字母式按一个主元整理后，仍须同时核对首项、常数项和交叉项。}
+
+\end{solution}
+
+\Needspace{12\baselineskip}
+
+\begin{problem}{例题 8 （循环式里寻找相同括号）}
 
 分解因式：$a^2(b-c)+b^2(c-a)+c^2(a-b)$。
 
@@ -216,7 +278,7 @@ x^4+x^2+1&=(x^2+1)^2-x^2=(x^2-x+1)(x^2+x+1).
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 6 · 讲解}
+\begin{solution}{例题 8 · 讲解}
 
 \think 把 $a$ 当主元后，二次项系数为 $b-c$，一次项系数为 $c^2-b^2$，常数项为 $b^2c-bc^2$。后三者都可以提取 $b-c$。
 
@@ -322,13 +384,13 @@ x^4+x^2+1&=(x^2+1)^2-x^2=(x^2-x+1)(x^2+x+1).
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\begin{problem}{例题 7 （首项系数为一：从整数因数中找根）}
+\begin{problem}{例题 9 （首项系数为一：从整数因数中找根）}
 
 分解因式：$x^3+2x^2-5x-6$。
 
 \end{problem}
 
-\begin{solution}[breakable=false]{例题 7 · 讲解}
+\begin{solution}[breakable=false]{例题 9 · 讲解}
 
 \think 首项系数是 $1$，常数项是 $-6$，有理根只能在 $\pm1,\pm2,\pm3,\pm6$ 中。先试小数，找到根后逐项求商。
 
@@ -352,13 +414,13 @@ F(x)-x^2(x+1)&=x^2-5x-6,\\
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\begin{problem}{例题 8 （首项系数不为一：尝试分数根）}
+\begin{problem}{例题 10 （首项系数不为一：尝试分数根）}
 
 分解因式：$4x^3-31x+15$。
 
 \end{problem}
 
-\begin{solution}[breakable=false]{例题 8 · 讲解}
+\begin{solution}[breakable=false]{例题 10 · 讲解}
 
 \think 有理根的分子应为 $15$ 的正负因数，分母应为 $4$ 的正因数。试过 $\pm1$ 没有得到零，不能停止；接着试 $1/2$。
 
@@ -385,13 +447,13 @@ F(x)&=(4x^3-2x^2)+(2x^2-x)+(-30x+15)\\
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\begin{problem}{例题 9 （两个不同的根，确定两个参数）}
+\begin{problem}{例题 11 （两个不同的根，确定两个参数）}
 
 已知 $F(x)=x^3+ax^2+bx+6$ 同时含因式 $x-1$ 与 $x+2$，求 $a,b$ 并分解 $F(x)$。
 
 \end{problem}
 
-\begin{solution}[breakable=false]{例题 9 · 讲解}
+\begin{solution}[breakable=false]{例题 11 · 讲解}
 
 \think 两个因式分别对应 $F(1)=0$ 与 $F(-2)=0$，得到两个关于 $a,b$ 的一次方程。根不同，两个一次因式的积也是因式。
 
@@ -413,13 +475,13 @@ F(x)&=(4x^3-2x^2)+(2x^2-x)+(-30x+15)\\
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\begin{problem}{例题 10 （重因式：商还要再代一次）}
+\begin{problem}{例题 12 （重因式：商还要再代一次）}
 
 已知 $F(x)=x^3+ax^2+bx+2$ 含因式 $(x-1)^2$，求 $a,b$ 并分解 $F(x)$。
 
 \end{problem}
 
-\begin{solution}[breakable=false]{例题 10 · 讲解}
+\begin{solution}[breakable=false]{例题 12 · 讲解}
 
 \think $F(1)=0$ 只给出一个条件。提出第一个 $x-1$ 后，商仍须在 $1$ 处为零，才能再提出一个 $x-1$。
 
@@ -476,7 +538,7 @@ F(x)&=(4x^3-2x^2)+(2x^2-x)+(-30x+15)\\
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 11 （由一次项倒推参数）}
+\begin{problem}{例题 13 （由一次项倒推参数）}
 
 $k$ 为何值时，多项式 $x^2-2xy+ky^2+3x-5y+2$ 能分解为两个实系数的一次因式的积？
 
@@ -484,7 +546,7 @@ $k$ 为何值时，多项式 $x^2-2xy+ky^2+3x-5y+2$ 能分解为两个实系数�
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 11 · 讲解}
+\begin{solution}{例题 13 · 讲解}
 
 \think 令 $y=0$ 得 $(x+1)(x+2)$。因此两个一次因式经调整常数倍后，可分别设成 $x+my+1$ 与 $x+ny+2$。比较 $xy$ 和 $y$ 的系数，先确定 $m,n$。
 

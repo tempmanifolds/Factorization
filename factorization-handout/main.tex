@@ -52,7 +52,7 @@
 \setlist[itemize]{leftmargin=1.6em, itemsep=2pt, topsep=3pt}
 
 
-% 例题随文讲解；练习与选学挑战的解析集中放在书末。
+% 例题随文讲解；练习与选学挑战的解析分别放在各章末尾。
 \newif\ifstudentnotes
 \studentnotesfalse
 \let\originalhint\hint
@@ -138,9 +138,12 @@
 \clearpage
 \input{sections/01-chapter}
 
-\Needspace{24\baselineskip}
+\Needspace{20\baselineskip}
+\input{sections/90-solutions}
+
+\clearpage
 \input{sections/02-chapter}
 
 \Needspace{20\baselineskip}
-\input{sections/90-solutions}
+\input{sections/91-solutions}
 \end{document}
