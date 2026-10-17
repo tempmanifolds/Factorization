@@ -3,29 +3,29 @@
 
 \Needspace{8\baselineskip}
 
-\block{分组与拆项：让共同因式出现}
+\block{分组与拆项}
 
 \Needspace{7\baselineskip}
 
 \begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 1 · 解析}
 
-\think 前两项提出 $a^2$ 后出现 $a+1$；后两项提出负号也出现 $a+1$。提完共同括号后，剩下的式子还可以用平方差公式。
+\think 前两项与后两项分别分组，都能提出 $a+1$。提出后，余下的 $a^2-1$ 还能用平方差公式分解。
 
 \solve \[a^3+a^2-a-1=a^2(a+1)-(a+1)=(a+1)(a^2-1)=(a+1)^2(a-1).\]
 
-\insight{提取负号要逐项变号；每得到一个因式，都再检查能否继续分解。}
+\insight{提出公因式后，再看括号内能否继续分解。}
 
 \end{solution}
 
-\Needspace{8\baselineskip}
+\Needspace{15\baselineskip}
 
-\block{配方与添项：把结构改成平方差}
+\block{配方与添项}
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 2 · 解析}
+\begin{solution}[breakable=false,before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 2 · 解析}
 
-\think 第一组配成 $(2x-1)^2$ 需要常数 $1$；第二组配成 $(y-2)^2$ 需要常数 $4$。两组相减所产生的常数正好为 $1-4=-3$。
+\think 先配 $(2x-1)^2$ 和 $(y-2)^2$。两者相减时，常数项为 $1-4=-3$，正好与原式一致。
 
 \solve \begin{align*}
 4x^2-4x-y^2+4y-3&=(4x^2-4x+1)-(y^2-4y+4)\\
@@ -33,7 +33,7 @@
 &=(2x-y+1)(2x+y-3).
 \end{align*}
 
-\insight{给两组配方时，常数不能各自随意添加；两组总和仍须等于原式。}
+\insight{两组分别配方时，要把总的常数项核对清楚。}
 
 \end{solution}
 
@@ -41,28 +41,28 @@
 
 \begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 3 · 解析}
 
-\think $a^4+4$ 不能直接使用平方差。补上 $4a^2$ 后可成为 $(a^2+2)^2$，再减去 $(2a)^2$，就出现平方差。
+\think 与例题 3 一样，先从首尾的平方项考虑。$(a^2+2)^2$ 比原式多 $4a^2$，减去 $(2a)^2$ 后可用平方差公式。
 
 \solve \begin{align*}
 a^4+4&=a^4+4a^2+4-4a^2\\
 &=(a^2+2)^2-(2a)^2\\
 &=(a^2-2a+2)(a^2+2a+2).
 \end{align*}
-两个二次因式分别为 $(a-1)^2+1$ 与 $(a+1)^2+1$，没有实数根，因而也不能分解为有理系数的一次因式。
+两个二次因式分别为 $(a-1)^2+1$ 与 $(a+1)^2+1$，均无实数根，不能再分解为有理系数的一次因式。与例题 3 对照，两题都先配平方，再减去一个平方。
 
-\insight{两项平方和不能直接套平方差，但添减同一项后可能形成平方差。}
+\insight{原式是平方和，也可以通过添减同一项改写成平方差。}
 
 \end{solution}
 
 \Needspace{8\baselineskip}
 
-\block{整体与换元：减少结构的复杂程度}
+\block{整体与换元}
 
 \Needspace{7\baselineskip}
 
 \begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 4 · 解析}
 
-\think 把常数乘积同为 $6$ 的两对放在一起，可得到 $x^2+7x+6$ 和 $x^2+5x+6$。它们围绕 $x^2+6x+6$ 分别多、少一个 $x$，恰好形成平方差。
+\think 试配四个因式时，$(x+1)(x+6)$ 与 $(x+2)(x+3)$ 的常数项都是 $6$，一次项系数分别为 $7$、$5$。把它们写成同一个式子加、减 $x$，乘积中的 $-x^2$ 就能被题末的 $+x^2$ 抵消。
 
 \solve \begin{align*}
 \text{原式}&=(x^2+7x+6)(x^2+5x+6)+x^2\\
@@ -71,7 +71,11 @@ a^4+4&=a^4+4a^2+4-4a^2\\
 &=(x^2+6x+6)^2.
 \end{align*}
 
-\insight{四个因式不急着展开；优先寻找能产生相同部分的配对。}
+与例题 5 对照，那里两因子相差 $2$，这里相差 $2x$，题末补上的项也从 $1$ 变成了 $x^2$。两题用的都是
+\[(U+h)(U-h)+h^2=U^2.\]
+例题 5 中 $h=1$，本题中 $h=x$。抓住这个关系，就不必记住每题的具体配对结果。
+
+\insight{四个一次因式先试配对，找出两组乘积共有的部分。}
 
 \end{solution}
 
@@ -79,7 +83,7 @@ a^4+4&=a^4+4a^2+4-4a^2\\
 
 \begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 5 · 解析}
 
-\think $x+y$ 与 $xy$ 反复出现。换元后是 $u^2+2uv+v^2-1$，前三项配成平方。代回后的因式里还藏着一个可分解的四项式。
+\think $x+y$ 与 $xy$ 各出现两次，可分别记为 $u,v$。换元后展开，前三项恰好为 $(u+v)^2$，再用平方差公式。
 
 \solve 令 $u=x+y$，$v=xy$，则
 \[u(u+2v)+(v+1)(v-1)=(u+v)^2-1=(u+v+1)(u+v-1).\]
@@ -89,7 +93,7 @@ a^4+4&=a^4+4a^2+4-4a^2\\
 &=(x+1)(y+1)(xy+x+y-1).
 \end{align*}
 
-\insight{换元后分解完，并不代表原字母下也已分解完；代回后再检查一次。}
+\insight{换元后得到的因式，代回原字母后还可能继续分解。}
 
 \end{solution}
 
@@ -97,7 +101,7 @@ a^4+4&=a^4+4a^2+4-4a^2\\
 
 \begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 6 · 解析}
 
-\think 换元后将出现 $u^2-2uv+v^2-2u+2v+1$，把 $u-v$ 再看成整体即可配方。最后的平方底数仍然可以分解。
+\think 仍令 $u=x+y$、$v=xy$。展开后，二次项为 $(u-v)^2$，一次项为 $-2(u-v)$，可再把 $u-v$ 看成一个整体。
 
 \solve 令 $u=x+y$，$v=xy$，则
 \begin{align*}
@@ -110,7 +114,7 @@ a^4+4&=a^4+4a^2+4-4a^2\\
 &=[-(x-1)(y-1)]^2=(x-1)^2(y-1)^2.
 \end{align*}
 
-\insight{完全平方也是积，但平方的底数若还能分解，就必须继续。}
+\insight{分解结果中有平方时，平方的底数也要检查。}
 
 \end{solution}
 
@@ -132,13 +136,13 @@ xy-x+y-1&=(x+1)(y-1).
 
 \Needspace{8\baselineskip}
 
-\block{主元法：选择一个字母}
+\block{主元法}
 
 \Needspace{7\baselineskip}
 
 \begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 7 · 解析}
 
-\think 关于 $x$ 是三次式，关于 $a$ 是二次式。按 $a$ 整理后，三个系数都含 $x+1$。次数较低只是一个选择线索，真正的依据是整理后能否出现共同因式。
+\think 原式关于 $x$ 是三次式，关于 $a$ 是二次式。试着按 $a$ 整理后，三个系数都有 $x+1$，提出它就能配方。
 
 \solve \begin{align*}
 \text{原式}&=(x+1)a^2+(2x^2+2x)a+(x^3+x^2-x-1)\\
@@ -148,25 +152,25 @@ xy-x+y-1&=(x+1)(y-1).
 &=(x+1)(x+a-1)(x+a+1).
 \end{align*}
 
-\insight{选择主元后逐项收集系数；不要把“选低次字母”当成必然成功的规则。}
+\insight{选择主元后，要看整理出的系数是否更容易处理。}
 
 \end{solution}
 
 \Needspace{8\baselineskip}
 
-\block{因式定理：从代值找因式}
+\block{因式定理}
 
 \Needspace{7\baselineskip}
 
 \begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 8 · 解析}
 
-\think 首项系数不是 $1$，分数根也在筛选范围内；但先试 $1$ 就能找到一个简单的一次因式。
+\think 先试 $x=1$，得到零，便可提出 $x-1$。商是二次式，用十字相乘继续分解。
 
 \solve 记原式为 $F(x)$，则 $F(1)=6-11+1+4=0$，所以
 \[F(x)=(x-1)(6x^2-5x-4)=(x-1)(3x-4)(2x+1).\]
 对应的三个根为 $1,4/3,-1/2$；分子分别整除 $4$，分母分别整除 $6$。
 
-\insight{候选根包括分数，但不必逐个试完；先找到一个容易的根，再处理低次商。}
+\insight{找到一个根就可以先求商，不必把所有候选根都试完。}
 
 \end{solution}
 
@@ -174,13 +178,13 @@ xy-x+y-1&=(x+1)(y-1).
 
 \begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 9 · 解析}
 
-\think 先代值确定 $x-1$ 与 $x+1$，也可以令 $t=x^2$ 分解二次式；两种路径都要继续检查剩余因式。
+\think 令 $t=x^2$，原式成为 $t^2-5t+4$。也可用因式定理找根；本题直接换元所需的计算更少。
 
 \solve $F(1)=F(-1)=0$，故 $x^2-1$ 是因式。
 \[F(x)=(x^2-1)(x^2-4)=(x-1)(x+1)(x-2)(x+2).\]
 全部有理根为 $1,-1,2,-2$。也可先令 $t=x^2$，用 $t^2-5t+4=(t-1)(t-4)$ 得到相同结果。
 
-\insight{因式定理可以与整体法配合；降次以后仍须继续分解。}
+\insight{同一道题可用不同方法，观察原式有时比逐个试根更省事。}
 
 \end{solution}
 
@@ -188,14 +192,14 @@ xy-x+y-1&=(x+1)(y-1).
 
 \begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 10 · 解析}
 
-\think 两个因式分别给出 $F(-1)=0$ 与 $F(-2)=0$，可列出关于 $a,b$ 的两个一次方程。
+\think 两个已知因式分别对应根 $-1,-2$。代入后得到两个一次方程，可求出 $a,b$。
 
 \solve 记 $F(x)=x^3+ax^2+bx+8$。由因式定理，
 \[F(-1)=a-b+7=0,\qquad F(-2)=4a-2b=0.\]
 所以 $b=2a$，再代入第一式得 $a=7$、$b=14$，故
 \[a+b=21.\]
 
-\insight{已知一次因式，先代入对应的根，把因式条件转成系数方程。}
+\insight{因式 $x+r$ 对应的根是 $-r$，代入时注意符号。}
 
 \end{solution}
 
@@ -203,26 +207,26 @@ xy-x+y-1&=(x+1)(y-1).
 
 \begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 11 · 解析}
 
-\think 先用正性判断是否有实数根，再把 $x^2$ 看成整体。没有一次因式，并不排除两个二次因式。
+\think 对所有实数 $x$，原式都大于零，所以没有实数根。再令 $t=x^2$，却能分解这个二次式。两问判断的是不同的事。
 
 \solve 对所有实数 $x$，$x^4+3x^2+2\ge2>0$，所以它没有实数根，更没有有理根，也没有有理系数的一次因式。
 然而
 \[x^4+3x^2+2=(x^2+1)(x^2+2).\]
-两个二次因式对实数 $x$ 都为正，不能再分解为有理系数的一次因式。因此原四次式能分解，分解结果在有理系数范围内已彻底。
+两个二次因式对实数 $x$ 都为正，不能再分解为有理系数的一次因式。因此原四次式可以分解，且在有理系数范围内已分解完毕。
 
-\insight{没有有理根，只排除有理系数的一次因式；四次及以上还要检查更高次因式。}
+\insight{没有有理根，只说明没有有理系数的一次因式。}
 
 \end{solution}
 
 \Needspace{8\baselineskip}
 
-\block{比较系数：由目标因式倒推}
+\block{待定系数法}
 
 \Needspace{7\baselineskip}
 
 \begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 12 · 解析}
 
-\think 由因式定理，代入 $x=-1$ 得零，就能确定因式 $x+1$。这里也可不用长除法，而把 $-2x^2$ 拆成 $x^2-3x^2$，把 $-13x$ 拆成 $-3x-10x$，直接分组。
+\think 代入 $x=-1$ 得零，说明有因式 $x+1$。可围绕它拆项：让 $x^3$ 配 $x^2$，常数 $-10$ 配 $-10x$，剩下 $-3x^2-3x$ 也含 $x+1$。
 
 \solve \begin{align*}
 x^3-2x^2-13x-10&=(x^3+x^2)+(-3x^2-3x)+(-10x-10)\\
@@ -230,7 +234,7 @@ x^3-2x^2-13x-10&=(x^3+x^2)+(-3x^2-3x)+(-10x-10)\\
 &=(x+1)(x+2)(x-5).
 \end{align*}
 
-\insight{因式定理确定目标因式，再用拆项或逐项相除求出商。}
+\insight{先用代值确定要凑的括号，再安排拆项。}
 
 \end{solution}
 
@@ -238,7 +242,7 @@ x^3-2x^2-13x-10&=(x^3+x^2)+(-3x^2-3x)+(-10x-10)\\
 
 \begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 13 · 解析}
 
-\think 四次式除去二次因式后，剩下二次因式；其首项系数必须为 $2$。设成 $2x^2+px+q$ 后，各次项的系数提供四个等式。
+\think 原式是四次式，已知因式是二次式，因此商应为二次式。最高次项系数为 $2$，可设商为 $2x^2+px+q$，展开后比较系数。
 
 \solve 设
 \[2x^4+x^3-ax^2+bx+a+b-1=(x^2+x-6)(2x^2+px+q).\]
@@ -247,19 +251,19 @@ x^3-2x^2-13x-10&=(x^3+x^2)+(-3x^2-3x)+(-10x-10)\\
 由 $p=-1$ 得 $a=13-q$、$b=q+6$，故 $a+b-1=18$。
 于是 $-6q=18$，得 $q=-3$，所以 $a=16$、$b=3$。
 
-\insight{含参数的因式条件，可以转化为有限个系数等式。}
+\insight{设商时，先由次数与最高次项系数确定它的形式。}
 
 \end{solution}
 
-\Needspace{8\baselineskip}
+\Needspace{14\baselineskip}
 
 \block{巩固与选学}
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 14 · 解析}
+\begin{solution}[breakable=false,before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 14 · 解析}
 
-\think 前面的三项可以写成 $(x^2+x)^2$，剩余项为 $2(x^2+x)+1$，再把 $x^2+x$ 看成整体。
+\think 先把 $3x^2$ 拆成 $x^2+2x^2$。前三项凑成 $(x^2+x)^2$，余下部分为 $2(x^2+x)+1$，又能配成平方。
 
 \solve \begin{align*}
 x^4+2x^3+3x^2+2x+1&=(x^2+x)^2+2(x^2+x)+1\\
@@ -267,15 +271,15 @@ x^4+2x^3+3x^2+2x+1&=(x^2+x)^2+2(x^2+x)+1\\
 \end{align*}
 $x^2+x+1=(x+\frac12)^2+\frac34>0$，不能再分解为有理系数的一次因式。
 
-\insight{按次数寻找完全平方，再用整体思想检查剩余部分。}
+\insight{凑出一个平方后，留意余下部分是否仍含相同的整体。}
 
 \end{solution}
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 15 · 解析}
+\begin{solution}[breakable=false,before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 15 · 解析}
 
-\think 前两项能提出 $x^2y(y-1)$。其余部分要围绕 $y-1$ 改写，其中 $x-xy^2$ 可以用平方差。
+\think 先把前两项提出 $y-1$，再看余下的 $x-xy^2+y-1$。其中 $x-xy^2=-x(y^2-1)$，也含 $y-1$，这样各部分便能合到一起。
 
 \solve \begin{align*}
 \text{原式}&=x^2y(y-1)-x(y^2-1)+(y-1)\\
@@ -284,7 +288,7 @@ $x^2+x+1=(x+\frac12)^2+\frac34>0$，不能再分解为有理系数的一次因�
 &=(x-1)(y-1)(xy-1).
 \end{align*}
 
-\insight{第一次分组后若仍复杂，继续围绕已经出现的共同括号调整。}
+\insight{已经找到一个共同括号后，可围绕它重新处理余下各项。}
 
 \end{solution}
 
@@ -292,14 +296,14 @@ $x^2+x+1=(x+\frac12)^2+\frac34>0$，不能再分解为有理系数的一次因�
 
 \begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{挑战 1 · 解析}
 
-\think 记 $A=2x-3y$、$B=3x-2y$，则 $A+B=5(x-y)$。因此原式可写成 $A^3+B^3-(A+B)^3$，展开最后一个立方后会大量抵消。
+\think 令 $A=2x-3y$、$B=3x-2y$，则 $A+B=5(x-y)$。原式成为 $A^3+B^3-(A+B)^3$；展开最后一个立方，$A^3$ 与 $B^3$ 都会抵消。
 
 \solve 由 $(A+B)^3=A^3+3A^2B+3AB^2+B^3$，得
 \[A^3+B^3-(A+B)^3=-3AB(A+B).\]
 所以原式为
 \[-15(x-y)(2x-3y)(3x-2y).\]
-这也解释了整体负号和系数 $15$ 的来源。
+其中系数 $-15$ 来自 $-3\times5$。
 
-\insight{出现几个立方时，先比较底数的和差关系，再决定是否展开。}
+\insight{几个立方放在一起时，可先比较它们底数的和与差。}
 
 \end{solution}

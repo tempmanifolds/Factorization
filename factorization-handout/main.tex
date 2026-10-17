@@ -38,7 +38,7 @@
 \newcommand{\solvehead}[1]{\par\smallskip\noindent
   {\headingfont\bfseries\color{inkiron}〔#1〕}\enspace}
 \newcommand{\insight}[1]{\par\nopagebreak[4]\smallskip\nopagebreak[4]\noindent
-  {\headingfont\bfseries\color{weld!60!inkiron}〔方法点睛〕}\enspace
+  {\headingfont\bfseries\color{weld!60!inkiron}〔要点〕}\enspace
   {\strandfont\small #1}\par}
 \newcommand{\hint}[1]{\par\smallskip\noindent
   {\strandfont\small{\raisebox{-0.8pt}{\loomtile{weld}}\hspace{4pt}}%
@@ -59,8 +59,8 @@
 \renewcommand{\hint}[1]{\ifstudentnotes\else\originalhint{#1}\fi}
 \newcommand{\methodcard}[2]{\ifstudentnotes\else
 \begin{tcolorbox}[knotindigo,breakable=false,before skip=6pt plus 2pt,after skip=6pt plus 2pt]
-\textbf{方法小结}\par #1\par\smallskip
-\textbf{易错提醒}\quad #2\end{tcolorbox}\fi}
+\textbf{小结}\par #1\par\smallskip
+\textbf{注意}\quad #2\end{tcolorbox}\fi}
 \newcommand{\topicline}[1]{\ifstudentnotes\else\noindent\whisper{#1}\par\medskip\fi}
 \setcounter{secnumdepth}{2}
 \setcounter{tocdepth}{2}
