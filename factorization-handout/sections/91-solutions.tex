@@ -1,7 +1,7 @@
 \subsection*{本章练习与挑战解析}
 \addcontentsline{toc}{subsection}{本章练习与挑战解析}
 
-\sidenote{例题 19 追问：和为 $51$ 时，差的绝对值最小为 $1$。最大乘积为 $(51^2-1)/4=650$，在两数为 $25,26$ 时取到。}
+\sidenote{例题 20 追问：和为 $51$ 时，差的绝对值最小为 $1$。最大乘积为 $(51^2-1)/4=650$，在两数为 $25,26$ 时取到。}
 
 \Needspace{8\baselineskip}
 
@@ -9,7 +9,7 @@
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 16 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 17 · 解析}
 
 \think 把 $-2a^2b^2$ 移到左边，左边成为 $(a^2+b^2)^2$。题目要的正是 $a^2+b^2$，可直接把它设为新字母。
 
@@ -23,15 +23,14 @@
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 17 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 18 · 解析}
 
-\think 前两式右边相同，作差后可提出 $m-n$。题目给出 $m\ne n$，于是另一个因式为零，可求出 $m+n$。
+\think 前两式右边相同，作差后可提出 $m-n$。由 $m\ne n$ 可求出 $m+n$，再将前两式相加，利用 $m^2+n^2=5$ 直接求 $a$。
 
 \solve 两式作差得 $(m-n)(m+n-2)=0$。由 $m\ne n$ 得 $m+n=2$。
-于是
-\[4=(m+n)^2=m^2+n^2+2mn=5+2mn,\]
-所以 $mn=-\frac12$。又
-\[a=m(m-2)=m(-n)=-mn=\frac12.\]
+再将前两式相加，得
+\[2a=m^2+n^2-2(m+n)=5-2\times2=1.\]
+故 $a=\frac12$。
 
 \insight{条件中出现“不相等”，作差分解后要留意相应因式不为零。}
 
@@ -43,18 +42,18 @@
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 18 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 19 · 解析}
 
-\think 先沿用例题 3 的方法分解 $t^4+64$。两个二次因式可分别写成 $F(t)$ 与 $F(t-4)$，其中 $F(t)=t^2+4t+8$。相差 $4$ 的数便有了可约去的因式。
+\think 先用通项 $a_n=n^2+4n+8$ 表示将要出现的二次式，再分解 $t^4+64$，查看哪些下标重复出现。
 
-\solve 设 $F(t)=t^2+4t+8$，则
-\[t^4+64=(t^2+4t+8)(t^2-4t+8)=F(t)F(t-4).\]
+\solve 记 $a_n=n^2+4n+8$，其中 $n$ 为整数，因此 $a_{-1}$ 也有定义。对整数 $t$，有
+\[t^4+64=(t^2+4t+8)(t^2-4t+8)=a_ta_{t-4}.\]
 分子各项分解后为
-\[F(7)F(3)\,F(15)F(11)\,F(23)F(19)\,F(31)F(27)\,F(39)F(35),\]
+\[a_7a_3\,a_{15}a_{11}\,a_{23}a_{19}\,a_{31}a_{27}\,a_{39}a_{35},\]
 分母各项分解后为
-\[F(3)F(-1)\,F(11)F(7)\,F(19)F(15)\,F(27)F(23)\,F(35)F(31).\]
-因为 $F(t)=(t+2)^2+4>0$，可以约去相同因式，得到
-\[\text{原式}=\frac{F(39)}{F(-1)}=\frac{1685}{5}=337.\]
+\[a_3a_{-1}\,a_{11}a_7\,a_{19}a_{15}\,a_{27}a_{23}\,a_{35}a_{31}.\]
+因为 $a_n=(n+2)^2+4>0$，可以约去相同因式，得到
+\[\text{原式}=\frac{a_{39}}{a_{-1}}=\frac{1685}{5}=337.\]
 
 \insight{把各项分解后，逐一核对重复的因式，保留没有配对的首尾因式。}
 
@@ -66,7 +65,7 @@
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 19 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 20 · 解析}
 
 \think $12xy$ 提示先配 $(x+6y)^2$，用去 $36y^2$ 后，还剩 $16y^2-8y+1$，它也是完全平方。
 
@@ -80,7 +79,7 @@
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 20 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 21 · 解析}
 
 \think 分别计算 $a-c$ 与 $c-b$，得到相同的式子 $m^2-mn+n^2$。将它配成平方和，就能同时判断两个差的符号。
 
@@ -95,13 +94,13 @@
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 21 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 22 · 解析}
 
 \think 先配方，得到 $(x-1)^2+(y-1)^2\le2$。两个平方均非负，每个都不超过 $2$，因此可先限制两个整数的范围，再逐一计数。
 
 \solve 原不等式等价于 $(x-1)^2+(y-1)^2\le2$。
 因为 $x,y$ 是整数，$x-1$、$y-1$ 各只能为 $-1,0,1$，即 $x,y\in\{0,1,2\}$。
-这 $3\times3=9$ 种组合的平方和都不超过 $2$，故共有 $9$ 个整数点。
+这 $3\times3=9$ 种组合的平方和都不超过 $2$，故共有 $9$ 个整数解。
 
 \insight{整数平方不超过 $2$ 时，只能为 $0$ 或 $1$。}
 
@@ -113,7 +112,7 @@
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 22 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 23 · 解析}
 
 \think 要把 $6ab-9a+10b$ 配成乘积，可用 $3a$ 与 $2b$ 配首项，再由两个一次项确定常数。配成后列因数对，还要检查所得 $a,b$ 是否为整数。
 
@@ -129,16 +128,16 @@
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 23 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 24 · 解析}
 
 \think 全部数的和为 $703$。选走 $a,b$ 后，剩余的和是 $703-a-b$，所以有 $703-a-b=ab$。移项再加 $1$，就能配成整数乘积。
 
 \solve 设所选两数为 $a<b$，则 $1\le a<b\le37$，且
 \[703-a-b=ab,\qquad (a+1)(b+1)=704.\]
-令 $u=a+1$、$v=b+1$，则 $2\le u<v\le38$。
-因 $uv=704$，有 $u\ge\frac{704}{38}>18$，且 $u<\sqrt{704}<27$。
+令 $m=a+1$、$n=b+1$，则 $2\le m<n\le38$。
+因 $mn=704$，有 $m\ge\frac{704}{38}>18$，且 $m<\sqrt{704}<27$。
 $704=2^6\times11$，在整数 $19$ 至 $26$ 中，只有 $22$ 是其因数。
-故 $u=22$、$v=32$，即 $a=21$、$b=31$，两数之差为 $10$。
+故 $m=22$、$n=32$，即 $a=21$、$b=31$，两数之差为 $10$。
 
 \insight{列因数对前，先把原数的范围换成新因数的范围。}
 
@@ -146,7 +145,7 @@ $704=2^6\times11$，在整数 $19$ 至 $26$ 中，只有 $22$ 是其因数。
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 24 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 25 · 解析}
 
 \think 将 $2a$ 移到左边，再补 $1$，得到 $(a+1)^2-b^2=2019$。分解后，$a+1+b$ 为正，两个因数的积也为正，因此另一因数同样为正。
 
@@ -165,7 +164,7 @@ $704=2^6\times11$，在整数 $19$ 至 $26$ 中，只有 $22$ 是其因数。
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 25 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 26 · 解析}
 
 \think 首尾两项可配成 $(n^2+10)^2$，它比原式多 $36n^2$。用平方差公式分解后，先判断两因数均为正整数，再用质数条件。
 
@@ -177,7 +176,7 @@ n^4-16n^2+100&=(n^2+10)^2-(6n)^2\\
 因此质数条件迫使 $(n-3)^2+1=1$，得 $n=3$。
 代回值为 $37$。$37$ 不被 $2,3,5$ 整除，且 $\sqrt{37}<7$，所以它是质数。
 
-分解这一步与例题 3、练习 3 相同。多出的质数条件用在分解之后：先说明两因数为正整数，再确定哪个因数只能为 $1$。
+分解这一步与例题 3、练习 4 相同。多出的质数条件用在分解之后：先说明两因数为正整数，再确定哪个因数只能为 $1$。
 
 \insight{质数写成两个正整数的积，其中必有一个因数为 $1$。}
 
@@ -185,9 +184,9 @@ n^4-16n^2+100&=(n^2+10)^2-(6n)^2\\
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 26 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 27 · 解析}
 
-\think 将相邻两数写成 $t,t+1$，展开后得到 $t^4+2t^3+3t^2+2t+1$。它与练习 14 是同一个多项式，可用相同的配方。
+\think 将相邻两数写成 $t,t+1$，展开后得到 $t^4+2t^3+3t^2+2t+1$。它与练习 5 是同一个多项式，可用相同的配方。
 
 \solve 令 $t=2018$，则
 \begin{align*}
@@ -202,43 +201,11 @@ t^2+t^2(t+1)^2+(t+1)^2&=t^4+2t^3+3t^2+2t+1\\
 
 \Needspace{8\baselineskip}
 
-\block{几何中的数量关系}
-
-\Needspace{6\baselineskip}
-
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 27 · 解析}
-
-\think 移项后同时有三个平方项与三个两两乘积。乘以 $2$，便能配出 $(a-b)^2$、$(b-c)^2$ 和 $(c-a)^2$。
-
-\solve 由已知条件得
-
-\begin{align*}
-2a^2+2b^2+2c^2-2ab-2bc-2ca&=0,\\
-(a-b)^2+(b-c)^2+(c-a)^2&=0.
-\end{align*}
-
-三个平方均非负，和为零，故 $a-b=b-c=c-a=0$，即 $a=b=c$。因此 $\triangle ABC$ 为等边三角形。
-
-同一变形还说明，对任意实数 $a,b,c$，有
-
-\[
-a^2+b^2+c^2-ab-bc-ca
-=\frac12[(a-b)^2+(b-c)^2+(c-a)^2]\ge0,
-\]
-
-等号成立当且仅当 $a=b=c$。
-
-\insight{由非负平方和判断字母是否相等，再判断三角形的形状。}
-
-\end{solution}
-
-\Needspace{8\baselineskip}
-
 \block{选学挑战}
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{挑战 2 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{挑战 1 · 解析}
 
 \think 一次操作将 $a,b$ 换成 $a+b+ab$。新数加 $1$ 后为 $(a+1)(b+1)$，所以可考察黑板上所有数各加 $1$ 后的乘积。
 
@@ -253,7 +220,7 @@ a^2+b^2+c^2-ab-bc-ca
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{挑战 3 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{挑战 2 · 解析}
 
 \think 前两个式子相等，作差后可提出 $a-b$，由此把 $2019$ 写成关于 $a,b$ 的式子。再代回 $c$，就能消去四次项并判断 $ab$ 的符号。
 

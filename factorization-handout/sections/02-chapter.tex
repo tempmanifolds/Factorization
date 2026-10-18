@@ -8,15 +8,15 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 14 （恒等式中的参数）}
+\begin{problem}{例题 15 （恒等式中的参数）}
 
-设 $y=ax$，若代数式 $(x+y)(x-2y)+3y(x+y)$ 化简为 $x^2$，求 $a$。这里“化简为”表示关于 $x$ 的恒等式。
+设 $y=ax$，若代数式 $(x+y)(x-2y)+3y(x+y)$ 可化简为 $x^2$，求 $a$。这里“化简为”表示关于 $x$ 的恒等式。
 
 \end{problem}
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 14 · 讲解}
+\begin{solution}{例题 15 · 讲解}
 
 \think 两项都有 $x+y$，先提出它，另一个因式也恰好是 $x+y$。代入 $y=ax$ 后，比较 $x^2$ 的系数即可，不必分别求 $x,y$。
 
@@ -24,7 +24,7 @@
 (x+y)(x-2y)+3y(x+y)&=(x+y)(x+y)\\
 &=(1+a)^2x^2.
 \end{align*}
-由恒等式得 $(1+a)^2=1$，即 $a(a+2)=0$，所以 $a=0$ 或 $a=-2$。
+由恒等式，比较系数得 $(1+a)^2=1$，即 $1+a=\pm1$，所以 $a=0$ 或 $a=-2$。
 代入 $a=0$ 或 $a=-2$，原式的系数 $(1+a)^2$ 都为 $1$。
 
 \insight{恒等式可比较系数；解平方等式时要保留两种符号。}
@@ -33,7 +33,7 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 15 （由两个条件求和）}
+\begin{problem}{例题 16 （由两个条件求和）}
 
 实数 $x,y$ 满足 $x^2+xy+y=14$、$y^2+xy+x=28$，求 $x+y$。
 
@@ -41,7 +41,7 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 15 · 讲解}
+\begin{solution}{例题 16 · 讲解}
 
 \think 题目只问 $x+y$，两式相加就能凑出它的平方。求出的两个和值都要保留，再用两式之差分别求出一组 $x,y$，确认原条件确实允许这些和值。
 
@@ -58,13 +58,13 @@
 
 \methodcard{先看条件与目标式中有没有相同的整体。条件相加、相减或移项后，有时能直接求出这个整体，无须分别求每个字母。}{换元后保留原有范围；题目未说字母为正时，要保留负值的可能。}
 
-\begin{problem}{练习 16}
+\begin{problem}{练习 17}
 
 实数 $a,b$ 满足 $a^4+b^4=a^2-2a^2b^2+b^2+6$，求 $a^2+b^2$。
 
 \end{problem}
 
-\begin{problem}{练习 17}
+\begin{problem}{练习 18}
 
 两个不等实数 $m,n$ 满足 $m^2-2m=a$、$n^2-2n=a$、$m^2+n^2=5$，求 $a$。
 
@@ -78,7 +78,7 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 16 （大数计算）}
+\begin{problem}{例题 17 （大数计算）}
 
 计算 $\displaystyle\frac{2004^3-2\times2004^2-2002}{2004^3+2004^2-2005}$。
 
@@ -86,7 +86,7 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 16 · 讲解}
+\begin{solution}{例题 17 · 讲解}
 
 \think 这些数都接近 $2004$。令 $t=2004$，则 $2002=t-2$、$2005=t+1$，分子、分母都能写成四项式，再用分组法分解。
 
@@ -104,7 +104,7 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 17 （连乘计算）}
+\begin{problem}{例题 18 （连乘计算）}
 
 计算
 \[
@@ -116,7 +116,7 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 17 · 讲解}
+\begin{solution}{例题 18 · 讲解}
 
 \think 先看第一项：$2\times5+2=3\times4$，$1\times4+2=2\times3$，相除得到 $2$。第二组会得到 $3/2$ 吗？用第 $k$ 组的式子验证，就能看清后面的约分规律。
 
@@ -134,14 +134,13 @@
 
 \methodcard{先用字母写出数字间的关系。连乘题可从一组对应项入手，分解后再看哪些因式重复出现。}{只有分子、分母中的相同非零因式才能约去，和式中的项不能直接约。}
 
-\begin{problem}{练习 18}
+\begin{problem}{练习 19}
 
 计算
 \[
 \frac{(7^4+64)(15^4+64)(23^4+64)(31^4+64)(39^4+64)}
 {(3^4+64)(11^4+64)(19^4+64)(27^4+64)(35^4+64)}.
 \]
-
 
 \end{problem}
 
@@ -153,7 +152,7 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 18 （平方和为零）}
+\begin{problem}{例题 19 （平方和为零）}
 
 已知实数 $m,n$，当 $x=m$ 时，多项式 $x^2+2x+n^2$ 的值为 $-1$；求 $x=-m$ 时该多项式的值。
 
@@ -161,9 +160,9 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 18 · 讲解}
+\begin{solution}{例题 19 · 讲解}
 
-\think 把 $x=m$ 代入，得 $m^2+2m+n^2=-1$。将右边的 $-1$ 移到左边，恰好能配成两个平方的和；和为零时，两个平方都只能为零。
+\think 把 $x=m$ 代入，得 $m^2+2m+n^2=-1$。移项后能配成两个平方的和；和为零时，两个平方都只能为零。
 
 \solve 由已知条件得
 \[(m+1)^2+n^2=0.\]
@@ -176,7 +175,7 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 19 （和一定，求积的最大值）}
+\begin{problem}{例题 20 （和一定，求积的最大值）}
 
 观察 $1\times49,2\times48,\ldots,25\times25,\ldots,49\times1$。
 \begin{enumerate}[label=(\arabic*)]
@@ -188,9 +187,9 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 19 · 讲解}
+\begin{solution}{例题 20 · 讲解}
 
-\think 第一组两因数的和总是 $50$，乘积在两数接近时较大。怎样证明？由 $4ab=(a+b)^2-(a-b)^2$，和固定后，差的平方越小，乘积越大。
+\think 第一组两因数的和总是 $50$，乘积在两数接近时较大。怎样证明？由 $4ab=(a+b)^2-(a-b)^2$，和固定后，差的平方越小，乘积越大。也可以由恒等式 $(a-b)^2=(a+b)^2-4ab\ge0$，得到 $(a+b)^2\ge4ab$。
 
 \solve 第一组有 $a+b=50$，所以
 \[ab=\frac{2500-(a-b)^2}{4}\le625.\]
@@ -205,23 +204,23 @@
 
 \end{solution}
 
-\methodcard{可从交叉项决定怎样配方。配成平方后，要接着说明它对取值有什么限制：平方和为零、平方非负，或某个平方有上界。}{和为零不能直接推出每项为零，必须先知道每项非负。求最值时还要检查等号条件。}
+\methodcard{可从交叉项决定怎样配方。配成平方后，要接着说明它对取值有什么限制：平方和为零、平方非负，或某个平方有上界。}{和为零不能直接推出每项为零。求最值时还要检查等号条件。}
 
-\begin{problem}{练习 19}
+\begin{problem}{练习 20}
 
 实数 $x,y$ 满足 $x^2+12xy+52y^2-8y+1=0$，求 $x^2-y^2$。
 
 \end{problem}
 
-\begin{problem}{练习 20}
+\begin{problem}{练习 21}
 
 已知实数 $m\ne n$，$a=2m^2-mn$、$b=mn-2n^2$、$c=m^2-n^2$。用“$<$”表示 $a,b,c$ 的大小关系。
 
 \end{problem}
 
-\begin{problem}{练习 21}
+\begin{problem}{练习 22}
 
-在平面直角坐标系中，满足 $x^2+y^2\le2x+2y$ 的整数点 $(x,y)$ 有多少个？
+有多少个整数解 $(x,y)$ 满足 $x^2+y^2\le2x+2y$？
 
 \end{problem}
 
@@ -233,7 +232,7 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 20 （整数解的列举）}
+\begin{problem}{例题 21 （整数解的列举）}
 
 求方程 $xy-2x-2y+7=0$ 的全部整数解，其中 $x\le y$。
 
@@ -241,7 +240,7 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 20 · 讲解}
+\begin{solution}{例题 21 · 讲解}
 
 \think 先把 $xy-2x-2y$ 与 $(x-2)(y-2)$ 比较，后者只多一个常数 $4$。补上这项，方程就成了两个整数的乘积等于 $-3$，可列出因数对。
 
@@ -256,22 +255,21 @@
 
 \Needspace{6\baselineskip}
 
-\methodcard{含有 $xy$ 及 $x,y$ 一次项的方程，可尝试添一个常数配成乘积。例如 $xy+x+y=M$ 可写成 $(x+1)(y+1)=M+1$。若 $x,y$ 为正整数，新因数都至少为 $2$；这些范围要一并用来筛选。}{整数可以为负；原字母为正，也不代表平移后的因式为正。}
+\methodcard{含有 $xy$ 及 $x,y$ 一次项的方程，可尝试添一个常数配成乘积。例如 $xy+x+y=M$ 可写成 $(x+1)(y+1)=M+1$（回看练习 7、8 后的总结）。若 $x,y$ 为正整数，新因数都至少为 $2$；这些范围要一并用来筛选。}{整数可以为负。}
 
-\begin{problem}{练习 22}
+\begin{problem}{练习 23}
 
 整数 $a,b$ 满足 $6ab=9a-10b+303$，求 $a+b$。
 
-
 \end{problem}
 
-\begin{problem}{练习 23}
+\begin{problem}{练习 24}
 
 从 $1,2,\ldots,37$ 中选出两个不同的数，使其余 $35$ 个数之和等于这两个数之积。求所选两数之差的绝对值。
 
 \end{problem}
 
-\begin{problem}{练习 24}
+\begin{problem}{练习 25}
 
 两个互不相等的正整数 $a,b$ 满足 $a^2-b^2=2018-2a$，求 $a+b$。
 
@@ -285,7 +283,7 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 21 （用整除性筛选）}
+\begin{problem}{例题 22 （用整除性筛选）}
 
 将某个正整数 $n$ 代入 $n^5-n$，四个结果中仅一个正确。它是哪一个？A．$7770$；B．$7775$；C．$7776$；D．$7779$。
 
@@ -293,12 +291,12 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 21 · 讲解}
+\begin{solution}{例题 22 · 讲解}
 
 \think 不必直接算五次方。先分解 $n^5-n$，看它一定能被哪些数整除，再据此排除选项。选出一个结果后，还需找到相应的 $n$。
 
 \solve \[n^5-n=n(n^4-1)=n(n-1)(n+1)(n^2+1).\]
-连续三个整数中有一个偶数、一个 $3$ 的倍数，因此该式必被 $6$ 整除。
+连续三个整数中有一个偶数、一个 $\boxed{3\text{ 的倍数}}$，因此该式必被 $6$ 整除。
 先排除奇数选项 B、D。A、C 都是 $6$ 的倍数，还不能仅凭这一点确定答案。
 再看因数 $5$：$n$ 除以 $5$ 的余数为 $0,1,2,3,4$ 时，分别有 $n,n-1,n^2+1,n^2+1,n+1$ 被 $5$ 整除。
 故该式必被 $30$ 整除，四个选项中只有 A 符合。
@@ -310,7 +308,7 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 22 （完全平方数条件）}
+\begin{problem}{例题 23 （完全平方数条件）}
 
 自然数 $n$ 满足 $n^2+15n+26$ 是完全平方数，求 $n$。
 
@@ -318,7 +316,7 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 22 · 讲解}
+\begin{solution}{例题 23 · 讲解}
 
 \think 设原式为 $t^2$。因为一次项系数 $15$ 为奇数，先乘 $4$ 再配方，能避开分数，得到两个整数平方之差为 $121$，再列因数对。
 
@@ -327,7 +325,7 @@
 即 $(2n+15-2t)(2n+15+2t)=121$。
 两因数的积为正，和为 $4n+30>0$，所以均为正整数。又前者不大于后者，因此只有 $(1,121)$、$(11,11)$ 两对。
 第一对给出 $2n+15=61$，得 $n=23$、$t=30$；第二对给出 $n=-2$，不符合自然数条件。
-故 $n=23$，此时原式为 $900=30^2$。上述列举包括 $n\ge0$ 的所有可能。
+故 $n=23$，此时原式为 $900=30^2$。
 
 \insight{一次项系数为奇数时，可先乘 $4$，把配方写成整数形式。}
 
@@ -335,7 +333,7 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 23 （最大公因数）}
+\begin{problem}{例题 24 （最大公因数）}
 
 对所有大于 $2$ 的正整数 $n$，求这些整数 $n^5-5n^3+4n$ 的最大公因数。
 
@@ -343,7 +341,7 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 23 · 讲解}
+\begin{solution}{例题 24 · 讲解}
 
 \think 先提出 $n$，余下部分按 $n^2$ 分解，会得到五个连续整数的积。先证明每个值都是 $120$ 的倍数，再找一个恰好等于 $120$ 的值，才能确定最大公因数。
 
@@ -361,7 +359,7 @@
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\begin{problem}{例题 24 （四个连续整数的积加一）}
+\begin{problem}{例题 25 （四个连续整数的积加一）}
 
 设 $n$ 为正整数，证明 $(n+2020)(n+2021)(n+2022)(n+2023)+1$ 是完全平方数。
 
@@ -369,7 +367,7 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}[breakable=false]{例题 24 · 讲解}
+\begin{solution}[breakable=false]{例题 25 · 讲解}
 
 \think 令 $N=n+2020$，四个因数就成为连续整数。先把首尾一对、中间一对相乘，得到 $N^2+3N$ 与 $N^2+3N+2$。这与例题 5 的两个因子相差 $2$ 的情形相同。
 
@@ -388,7 +386,7 @@
 m(m+1)(m+2)(m+3)+1=(m^2+3m+1)^2.
 \]
 
-\insight{四个连续整数可以首尾配对；两组乘积相差 $2$，加一后可配成平方。}
+\insight{四个连续整数对应的式子可以两两配对，使两组乘积含有相同的部分；两组乘积相差 $2$，加一后可配成平方。}
 
 \end{solution}
 
@@ -396,13 +394,13 @@ m(m+1)(m+2)(m+3)+1=(m^2+3m+1)^2.
 
 \methodcard{整除题可先分解，再找所需的整数因数。质数条件常限制某个正因数为 $1$；完全平方条件可设平方后配成平方差，也可直接把原式配成平方。求最大公因数还应找一个取值来限制它不能更大。}{分别能被 $a,b$ 整除，只有在 $a,b$ 互质时，才能直接推出能被 $ab$ 整除。}
 
-\begin{problem}{练习 25}
+\begin{problem}{练习 26}
 
 已知 $n$ 为正整数，且 $n^4-16n^2+100$ 是质数，求 $n$。
 
 \end{problem}
 
-\begin{problem}{练习 26}
+\begin{problem}{练习 27}
 
 证明 $2018^2+2018^2\times2019^2+2019^2$ 是完全平方数。
 
@@ -416,7 +414,7 @@ m(m+1)(m+2)(m+3)+1=(m^2+3m+1)^2.
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 25 （图形中的面积关系）}
+\begin{problem}{例题 26 （图形中的面积关系）}
 
 如图，分别以正数 $a,b,m,n$ 为边长作正方形，$m>n$，且 $am-bn=2$、$an+bm=4$。
 图①是边长为 $a,b$ 的两个正方形；图②中 $AB=m$、$DC=n$、$BP=m$、$PC=n$，$AB,DC$ 均垂直于 $BC$，阴影为 $\triangle APD$。
@@ -430,7 +428,7 @@ m(m+1)(m+2)(m+3)+1=(m^2+3m+1)^2.
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 25 · 讲解}
+\begin{solution}{例题 26 · 讲解}
 
 \think 两式平方相加时，含 $abmn$ 的项会抵消，剩下 $(a^2+b^2)(m^2+n^2)$。图①给出 $a^2+b^2$，梯形面积给出 $(m+n)^2$；阴影面积可由梯形减去两个直角三角形求得。
 
@@ -455,51 +453,30 @@ m(m+1)(m+2)(m+3)+1=(m^2+3m+1)^2.
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{练习 27}
-
-已知 $a,b,c$ 为 $\triangle ABC$ 的三边，且 $a^2+b^2+c^2=ab+bc+ca$。判断这个三角形的形状，并说明理由。
-
-\end{problem}
-
-\Needspace{12\baselineskip}
-
 \subsection{选学挑战}
 
 \topicline{这两题需要把前面的方法用于新的情境，可以先试算、记录，再寻找一般的理由。}
 
-\begin{problem}{挑战 2 \starred （黑板上的操作，选学）}
+\begin{problem}{挑战 1 \starred （黑板上的操作，选学）}
 
 黑板上有 $1,\frac12,\ldots,\frac1{100}$ 共 $100$ 个数。每次删去两个数 $a,b$，写入 $a+b+ab$。经过 $99$ 次操作后，剩下的数是多少？
-
 
 \end{problem}
 
 \methodcard{操作题可从一次操作前后的等式找不变量。同值条件可先作差，再看所得关系能否用于目标式。}{试算有助于猜想；要说明每次操作或所有取值都成立，还需给出一般理由。}
 
-\begin{problem}{挑战 3 \starred （四次式的同值条件，选学）}
+\begin{problem}{挑战 2 \starred （四次式的同值条件，选学）}
 
 实数 $a\ne b$、正实数 $c$ 满足 $a^4-2019a=b^4-2019b=c$。证明 $-\sqrt c<ab<0$。
-
 
 \end{problem}
 
 \Needspace{12\baselineskip}
 \block{做完本章，回头想一想}
 \begin{enumerate}[label=(\arabic*)]
-\item 比较例题 15 与练习 16：为什么前者的负值要保留，后者的负值要舍去？依据来自哪里？
-\item 比较例题 21 与例题 23：两个五次式分别怎样分解？连续整数的个数相同吗？
-\item 从练习 22—24 中选一道，说明每个条件在筛选因数对时用在了哪一步。再合上解析，独立重做一道曾经需要提示的题。
+\item 比较例题 16 与练习 17：为什么前者的负值要保留，后者的负值要舍去？依据来自哪里？
+\item 比较例题 22 与例题 24：两个五次式分别怎样分解？连续整数的个数相同吗？
+\item 从练习 23—25 中选一道，说明每个条件在筛选因数对时用在了哪一步。再合上解析，独立重做一道曾经需要提示的题。
 \end{enumerate}
 
-换序自测可按练习 $17,25,20,23,26$ 的顺序进行。每题先判断：题目中的哪条信息提示你采用这种方法？看过解析才做出的题，隔一天再试。
-
-\ifstudentnotes\else
-\Needspace{10\baselineskip}
-\block{入手提示（卡住时再看）}
-\begin{description}[leftmargin=4.5em,labelwidth=4em,itemsep=3pt]
-\item[练习 18] 先处理一般式 $t^4+64$，再看数与数之间相差多少。
-\item[练习 22] 尝试把含 $ab,a,b$ 的三项配成两个一次式的乘积。
-\item[挑战 2] 怎样给 $a+b+ab$ 添一个常数，使它能分解？
-\item[挑战 3] 先把两个取值相等的式子作差。
-\end{description}
-\fi
+换序自测可按练习 $18,26,21,24,27$ 的顺序进行。每题先判断：题目中的哪条信息提示你采用这种方法？看过解析才做出的题，隔一天再试。

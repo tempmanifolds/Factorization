@@ -1,5 +1,5 @@
-\subsection*{本章练习与挑战解析}
-\addcontentsline{toc}{subsection}{本章练习与挑战解析}
+\subsection*{本章练习解析}
+\addcontentsline{toc}{subsection}{本章练习解析}
 
 \Needspace{8\baselineskip}
 
@@ -17,13 +17,30 @@
 
 \end{solution}
 
+\Needspace{7\baselineskip}
+
+\begin{solution}[breakable=false,before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 2 · 解析}
+
+\think 先把前两项提出 $y-1$，再看余下的 $x-xy^2+y-1$。其中 $x-xy^2=-x(y^2-1)$，也含 $y-1$，这样各部分便能合到一起。
+
+\solve \begin{align*}
+\text{原式}&=x^2y(y-1)-x(y^2-1)+(y-1)\\
+&=(y-1)[x^2y-x(y+1)+1]\\
+&=(y-1)[xy(x-1)-(x-1)]\\
+&=(x-1)(y-1)(xy-1).
+\end{align*}
+
+\insight{已经找到一个共同括号后，可围绕它重新处理余下各项。}
+
+\end{solution}
+
 \Needspace{15\baselineskip}
 
 \block{配方与添项}
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[breakable=false,before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 2 · 解析}
+\begin{solution}[breakable=false,before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 3 · 解析}
 
 \think 先配 $(2x-1)^2$ 和 $(y-2)^2$。两者相减时，常数项为 $1-4=-3$，正好与原式一致。
 
@@ -39,7 +56,7 @@
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 3 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 4 · 解析}
 
 \think 与例题 3 一样，先从首尾的平方项考虑。$(a^2+2)^2$ 比原式多 $4a^2$，减去 $(2a)^2$ 后可用平方差公式。
 
@@ -54,13 +71,29 @@ a^4+4&=a^4+4a^2+4-4a^2\\
 
 \end{solution}
 
+\Needspace{7\baselineskip}
+
+\begin{solution}[breakable=false,before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 5 · 解析}
+
+\think 先把 $3x^2$ 拆成 $x^2+2x^2$。前三项凑成 $(x^2+x)^2$，余下部分为 $2(x^2+x)+1$，又能配成平方。
+
+\solve \begin{align*}
+x^4+2x^3+3x^2+2x+1&=(x^2+x)^2+2(x^2+x)+1\\
+&=(x^2+x+1)^2.
+\end{align*}
+$x^2+x+1=(x+\frac12)^2+\frac34>0$，不能再分解为有理系数的一次因式。
+
+\insight{凑出一个平方后，留意余下部分是否仍含相同的整体。}
+
+\end{solution}
+
 \Needspace{8\baselineskip}
 
 \block{整体与换元}
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 4 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 6 · 解析}
 
 \think 试配四个因式时，$(x+1)(x+6)$ 与 $(x+2)(x+3)$ 的常数项都是 $6$，一次项系数分别为 $7$、$5$。把它们写成同一个式子加、减 $x$，乘积中的 $-x^2$ 就能被题末的 $+x^2$ 抵消。
 
@@ -81,7 +114,7 @@ a^4+4&=a^4+4a^2+4-4a^2\\
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 5 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 7 · 解析}
 
 \think $x+y$ 与 $xy$ 各出现两次，可分别记为 $u,v$。换元后展开，前三项恰好为 $(u+v)^2$，再用平方差公式。
 
@@ -99,7 +132,7 @@ a^4+4&=a^4+4a^2+4-4a^2\\
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 6 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 8 · 解析}
 
 \think 仍令 $u=x+y$、$v=xy$。展开后，二次项为 $(u-v)^2$，一次项为 $-2(u-v)$，可再把 $u-v$ 看成一个整体。
 
@@ -118,21 +151,21 @@ a^4+4&=a^4+4a^2+4-4a^2\\
 
 \end{solution}
 
-\ifstudentnotes\else
-\begin{tcolorbox}[knotweld,breakable=false]
-\textbf{常见结构：$xy,x,y,1$ 的四项式}\par\smallskip
-练习 5 和练习 6 中，代回后出现了由 $xy,x,y,1$ 组成的四项式。下面四种结构很常见：
-\begin{align*}
-xy+x+y+1&=(x+1)(y+1),\\
-xy-x-y+1&=(x-1)(y-1),\\
-xy+x-y-1&=(x-1)(y+1),\\
-xy-x+y-1&=(x+1)(y-1).
-\end{align*}
-看到这类四项式，可先按 $x$ 分组，检查两组能否出现相同括号。一次项与常数项的符号要匹配；例如练习 6 的底数为
-\[x+y-xy-1=-(x-1)(y-1).\]
-换元后要代回，完全平方的底数也要继续检查。
-\end{tcolorbox}
-\fi
+\Needspace{7\baselineskip}
+
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 9 \starred · 解析}
+
+\think 令 $A=2x-3y$、$B=3x-2y$，则 $A+B=5(x-y)$。原式成为 $A^3+B^3-(A+B)^3$；展开最后一个立方，$A^3$ 与 $B^3$ 都会抵消。
+
+\solve 由 $(A+B)^3=A^3+3A^2B+3AB^2+B^3$，得
+\[A^3+B^3-(A+B)^3=-3AB(A+B).\]
+所以原式为
+\[-15(x-y)(2x-3y)(3x-2y).\]
+其中系数 $-15$ 来自 $-3\times5$。
+
+\insight{几个立方放在一起时，可先比较它们底数的和与差。}
+
+\end{solution}
 
 \Needspace{8\baselineskip}
 
@@ -140,7 +173,7 @@ xy-x+y-1&=(x+1)(y-1).
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 7 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 10 · 解析}
 
 \think 原式关于 $x$ 是三次式，关于 $a$ 是二次式。试着按 $a$ 整理后，三个系数都有 $x+1$，提出它就能配方。
 
@@ -162,7 +195,7 @@ xy-x+y-1&=(x+1)(y-1).
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 8 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 11 · 解析}
 
 \think 先试 $x=1$，得到零，便可提出 $x-1$。商是二次式，用十字相乘继续分解。
 
@@ -176,21 +209,7 @@ xy-x+y-1&=(x+1)(y-1).
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 9 · 解析}
-
-\think 令 $t=x^2$，原式成为 $t^2-5t+4$。也可用因式定理找根；本题直接换元所需的计算更少。
-
-\solve $F(1)=F(-1)=0$，故 $x^2-1$ 是因式。
-\[F(x)=(x^2-1)(x^2-4)=(x-1)(x+1)(x-2)(x+2).\]
-全部有理根为 $1,-1,2,-2$。也可先令 $t=x^2$，用 $t^2-5t+4=(t-1)(t-4)$ 得到相同结果。
-
-\insight{同一道题可用不同方法，观察原式有时比逐个试根更省事。}
-
-\end{solution}
-
-\Needspace{7\baselineskip}
-
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 10 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 12 · 解析}
 
 \think 两个已知因式分别对应根 $-1,-2$。代入后得到两个一次方程，可求出 $a,b$。
 
@@ -205,7 +224,7 @@ xy-x+y-1&=(x+1)(y-1).
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 11 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 13 · 解析}
 
 \think 对所有实数 $x$，原式都大于零，所以没有实数根。再令 $t=x^2$，却能分解这个二次式。两问判断的是不同的事。
 
@@ -218,29 +237,29 @@ xy-x+y-1&=(x+1)(y-1).
 
 \end{solution}
 
+\Needspace{7\baselineskip}
+
+\begin{solution}[breakable=false,before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 14 · 解析}
+\think 把 $n^3+100$ 除以 $n+10$，由余式定理可直接算出余数为 $(-10)^3+100=-900$。商在整数 $n$ 处也为整数，因此只需检查 $n+10$ 能否整除 $900$。
+
+\solve 由多项式除法，
+\[n^3+100=(n+10)(n^2-10n+100)-900,\]
+所以
+\[\frac{n^3+100}{n+10}=n^2-10n+100-\frac{900}{n+10}.\]
+前一部分为整数，故原式为整数当且仅当 $n+10\mid900$。
+因为 $n$ 为正整数，$n+10$ 是 $900$ 的正因数，最大为 $900$ 且能取到。
+因此 $n$ 的最大值为 $900-10=890$。
+
+\insight{商在整数处取整数值时，可将整除条件转给常数余数。}
+\end{solution}
+
 \Needspace{8\baselineskip}
 
 \block{待定系数法}
 
 \Needspace{7\baselineskip}
 
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 12 · 解析}
-
-\think 代入 $x=-1$ 得零，说明有因式 $x+1$。可围绕它拆项：让 $x^3$ 配 $x^2$，常数 $-10$ 配 $-10x$，剩下 $-3x^2-3x$ 也含 $x+1$。
-
-\solve \begin{align*}
-x^3-2x^2-13x-10&=(x^3+x^2)+(-3x^2-3x)+(-10x-10)\\
-&=(x+1)(x^2-3x-10)\\
-&=(x+1)(x+2)(x-5).
-\end{align*}
-
-\insight{先用代值确定要凑的括号，再安排拆项。}
-
-\end{solution}
-
-\Needspace{7\baselineskip}
-
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 13 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 15 · 解析}
 
 \think 原式是四次式，已知因式是二次式，因此商应为二次式。最高次项系数为 $2$，可设商为 $2x^2+px+q$，展开后比较系数。
 
@@ -255,55 +274,25 @@ x^3-2x^2-13x-10&=(x^3+x^2)+(-3x^2-3x)+(-10x-10)\\
 
 \end{solution}
 
-\Needspace{14\baselineskip}
-
-\block{巩固与选学}
-
 \Needspace{7\baselineskip}
 
-\begin{solution}[breakable=false,before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 14 · 解析}
+\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 16 · 解析}
+\think 可设出另一个一次因式后比较系数；也可把 $y$ 暂作常数，按 $x$ 使用因式定理。
 
-\think 先把 $3x^2$ 拆成 $x^2+2x^2$。前三项凑成 $(x^2+x)^2$，余下部分为 $2(x^2+x)+1$，又能配成平方。
+\solvehead{方法一：待定系数}
+设
+\[x^2-y^2+mx+3y+4=(x-y+4)(x+y+c).\]
+展开右边，得
+\[x^2-y^2+(c+4)x+(4-c)y+4c.\]
+比较系数，得 $4c=4$、$m=c+4$、$4-c=3$，所以 $c=1$、$m=5$。
 
-\solve \begin{align*}
-x^4+2x^3+3x^2+2x+1&=(x^2+x)^2+2(x^2+x)+1\\
-&=(x^2+x+1)^2.
+\solvehead{方法二：主元法与因式定理}
+把原式看作关于 $x$ 的多项式，代入根 $x=y-4$，得
+\begin{align*}
+0&=(y-4)^2-y^2+m(y-4)+3y+4\\
+&=(m-5)y+20-4m.
 \end{align*}
-$x^2+x+1=(x+\frac12)^2+\frac34>0$，不能再分解为有理系数的一次因式。
+上式对任意 $y$ 恒成立，比较系数得 $m=5$，且原式为 $(x-y+4)(x+y+1)$。
 
-\insight{凑出一个平方后，留意余下部分是否仍含相同的整体。}
-
-\end{solution}
-
-\Needspace{7\baselineskip}
-
-\begin{solution}[breakable=false,before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{练习 15 · 解析}
-
-\think 先把前两项提出 $y-1$，再看余下的 $x-xy^2+y-1$。其中 $x-xy^2=-x(y^2-1)$，也含 $y-1$，这样各部分便能合到一起。
-
-\solve \begin{align*}
-\text{原式}&=x^2y(y-1)-x(y^2-1)+(y-1)\\
-&=(y-1)[x^2y-x(y+1)+1]\\
-&=(y-1)[xy(x-1)-(x-1)]\\
-&=(x-1)(y-1)(xy-1).
-\end{align*}
-
-\insight{已经找到一个共同括号后，可围绕它重新处理余下各项。}
-
-\end{solution}
-
-\Needspace{7\baselineskip}
-
-\begin{solution}[before skip=4pt plus 1pt,after skip=4pt plus 1pt,top=6pt,bottom=6pt]{挑战 1 · 解析}
-
-\think 令 $A=2x-3y$、$B=3x-2y$，则 $A+B=5(x-y)$。原式成为 $A^3+B^3-(A+B)^3$；展开最后一个立方，$A^3$ 与 $B^3$ 都会抵消。
-
-\solve 由 $(A+B)^3=A^3+3A^2B+3AB^2+B^3$，得
-\[A^3+B^3-(A+B)^3=-3AB(A+B).\]
-所以原式为
-\[-15(x-y)(2x-3y)(3x-2y).\]
-其中系数 $-15$ 来自 $-3\times5$。
-
-\insight{几个立方放在一起时，可先比较它们底数的和与差。}
-
+\insight{多字母因式条件，可用待定系数，也可选定主元后使用因式定理。}
 \end{solution}
