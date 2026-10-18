@@ -308,7 +308,39 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 23 （完全平方数条件）}
+\begin{problem}{例题 23 （素数与合数的判断）}
+
+若 $a$ 为正整数，则 $a^4-3a^2+9$ 是素数还是合数？给出你的证明。
+
+\end{problem}
+
+\Needspace{6\baselineskip}
+
+\begin{solution}{例题 23 · 讲解}
+
+\think 先用首尾两项配成 $(a^2+3)^2$，多出的 $9a^2$ 恰好是平方，可以用平方差公式分解。分解后还要检查两个因数是否都大于 $1$；若有因数等于 $1$，应单独讨论。
+
+\solve 由平方差公式，得
+\begin{align*}
+a^4-3a^2+9
+&=(a^2+3)^2-(3a)^2\\
+&=(a^2+3a+3)(a^2-3a+3).
+\end{align*}
+因为 $a$ 为正整数，$a^2+3a+3\ge7>1$。再看另一个因数：
+\[a^2-3a+3=(a-1)(a-2)+1.\]
+\begin{enumerate}[label=(\arabic*)]
+\item 当 $a=1$ 或 $a=2$ 时，第二个因数等于 $1$，原式分别为 $7$、$13$，均为素数。
+\item 当 $a\ge3$ 时，$(a-1)(a-2)\ge2$，所以第二个因数至少为 $3$。此时原式是两个大于 $1$ 的正整数的积，故为合数。
+\end{enumerate}
+因此，$a=1,2$ 时原式为素数；$a\ge3$ 时原式为合数。
+
+\insight{分解后判断合数，要说明两个整数因数都大于 $1$；因数可能等于 $1$ 的取值须单独讨论。}
+
+\end{solution}
+
+\Needspace{12\baselineskip}
+
+\begin{problem}{例题 24 （完全平方数条件）}
 
 自然数 $n$ 满足 $n^2+15n+26$ 是完全平方数，求 $n$。
 
@@ -316,7 +348,7 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 23 · 讲解}
+\begin{solution}{例题 24 · 讲解}
 
 \think 设原式为 $t^2$。因为一次项系数 $15$ 为奇数，先乘 $4$ 再配方，能避开分数，得到两个整数平方之差为 $121$，再列因数对。
 
@@ -333,7 +365,7 @@
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 24 （最大公因数）}
+\begin{problem}{例题 25 （最大公因数）}
 
 对所有大于 $2$ 的正整数 $n$，求这些整数 $n^5-5n^3+4n$ 的最大公因数。
 
@@ -341,7 +373,7 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 24 · 讲解}
+\begin{solution}{例题 25 · 讲解}
 
 \think 先提出 $n$，余下部分按 $n^2$ 分解，会得到五个连续整数的积。先证明每个值都是 $120$ 的倍数，再找一个恰好等于 $120$ 的值，才能确定最大公因数。
 
@@ -359,7 +391,7 @@
 
 \par\noindent\begin{minipage}{\linewidth}
 
-\begin{problem}{例题 25 （四个连续整数的积加一）}
+\begin{problem}{例题 26 （四个连续整数的积加一）}
 
 设 $n$ 为正整数，证明 $(n+2020)(n+2021)(n+2022)(n+2023)+1$ 是完全平方数。
 
@@ -367,7 +399,7 @@
 
 \Needspace{6\baselineskip}
 
-\begin{solution}[breakable=false]{例题 25 · 讲解}
+\begin{solution}[breakable=false]{例题 26 · 讲解}
 
 \think 令 $N=n+2020$，四个因数就成为连续整数。先把首尾一对、中间一对相乘，得到 $N^2+3N$ 与 $N^2+3N+2$。这与例题 5 的两个因子相差 $2$ 的情形相同。
 
@@ -414,7 +446,7 @@ m(m+1)(m+2)(m+3)+1=(m^2+3m+1)^2.
 
 \Needspace{12\baselineskip}
 
-\begin{problem}{例题 26 （图形中的面积关系）}
+\begin{problem}{例题 27 （图形中的面积关系）}
 
 如图，分别以正数 $a,b,m,n$ 为边长作正方形，$m>n$，且 $am-bn=2$、$an+bm=4$。
 图①是边长为 $a,b$ 的两个正方形；图②中 $AB=m$、$DC=n$、$BP=m$、$PC=n$，$AB,DC$ 均垂直于 $BC$，阴影为 $\triangle APD$。
@@ -428,7 +460,7 @@ m(m+1)(m+2)(m+3)+1=(m^2+3m+1)^2.
 
 \Needspace{6\baselineskip}
 
-\begin{solution}{例题 26 · 讲解}
+\begin{solution}{例题 27 · 讲解}
 
 \think 两式平方相加时，含 $abmn$ 的项会抵消，剩下 $(a^2+b^2)(m^2+n^2)$。图①给出 $a^2+b^2$，梯形面积给出 $(m+n)^2$；阴影面积可由梯形减去两个直角三角形求得。
 
@@ -463,20 +495,9 @@ m(m+1)(m+2)(m+3)+1=(m^2+3m+1)^2.
 
 \end{problem}
 
-\methodcard{操作题可从一次操作前后的等式找不变量。同值条件可先作差，再看所得关系能否用于目标式。}{试算有助于猜想；要说明每次操作或所有取值都成立，还需给出一般理由。}
 
 \begin{problem}{挑战 2 \starred （四次式的同值条件，选学）}
 
 实数 $a\ne b$、正实数 $c$ 满足 $a^4-2019a=b^4-2019b=c$。证明 $-\sqrt c<ab<0$。
 
 \end{problem}
-
-\Needspace{12\baselineskip}
-\block{做完本章，回头想一想}
-\begin{enumerate}[label=(\arabic*)]
-\item 比较例题 16 与练习 17：为什么前者的负值要保留，后者的负值要舍去？依据来自哪里？
-\item 比较例题 22 与例题 24：两个五次式分别怎样分解？连续整数的个数相同吗？
-\item 从练习 23—25 中选一道，说明每个条件在筛选因数对时用在了哪一步。再合上解析，独立重做一道曾经需要提示的题。
-\end{enumerate}
-
-换序自测可按练习 $18,26,21,24,27$ 的顺序进行。每题先判断：题目中的哪条信息提示你采用这种方法？看过解析才做出的题，隔一天再试。

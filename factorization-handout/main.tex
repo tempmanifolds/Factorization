@@ -11,6 +11,9 @@
 \usepackage{pifont}
 \usetikzlibrary{decorations.pathreplacing}
 
+% 全书关闭左侧贯穿页面的装饰带。
+\renewcommand{\loomrail}{}
+
 % 页眉线（可选）；老师偏好极简时可整行注释掉
 %\runningthread{因式分解专题讲义 · 课前自学讲义}
 
@@ -27,7 +30,7 @@
   before upper={{\headingfont\bfseries\color{madder}#1}\par\smallskip}%
   % , after upper={\answerspace}   % 打印作答版：取消本行注释
 }
-\newtcolorbox{solution}[2][]{knotindigo, lines before break=4,
+\newtcolorbox{solution}[2][]{knotindigo, colback=white, lines before break=4,
   before skip=6pt plus 2pt, after skip=6pt plus 2pt,
   before upper={{\headingfont\bfseries\color{indigo}#2}\par\smallskip},#1}
 
@@ -71,7 +74,7 @@
 \titleformat{\subsection}[block]{\headingfont\bfseries\color{indigo}\fontsize{12}{15}\selectfont}
   {\thesubsection}{0.65em}{}
 \titlespacing*{\subsection}{0pt}{16pt plus 3pt}{7pt}
-\hypersetup{pdftitle={因式分解专题讲义},pdfauthor={数学专题讲义}}
+\hypersetup{pdftitle={Factorization: Techniques and Applications},pdfauthor={Hence}}
 
 % 封面：四块面积相加，等于矩形两边的乘积。
 \definecolor{tilegreen}{HTML}{2E806D}
@@ -132,7 +135,7 @@
 \end{center}}
 
 \begin{document}
-\loomcover{因式分解专题讲义}{}{}{2026 年 10 月}
+\loomcover{Factorization:\\[0.15em]{\fontsize{24}{29}\selectfont Techniques and Applications}}{Hence}{}{2026 年 10 月}
 \clearpage
 {\small\tableofcontents}
 \clearpage

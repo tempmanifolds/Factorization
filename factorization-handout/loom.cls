@@ -376,7 +376,7 @@
     {\strandfont\small\color{selvage}#4\par}
     \vspace{1.1cm}
     {\labelfont\footnotesize\color{selvage}%格言
-      以\textcolor{indigo}{靛蓝}、\textcolor{madder}{茜红}与\textcolor{weld}{木樨草黄}染就，铁胆墨勾线\quad 织于 \textsc{loom}\par}
+      看清\textcolor{indigo}{结构}，选准\textcolor{madder}{方法}。\par}
   \end{titlepage}%
   \loomrail}
 
